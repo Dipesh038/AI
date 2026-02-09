@@ -1,0 +1,5932 @@
+{
+  "tools": [
+    {
+      "name": "ChatGPT",
+      "category": "Communication And Support",
+      "description": "ChatGPT is an advanced AI language model by OpenAI that generates human-like text, answers questions, automates tasks, and enhances productivity across diverse applications.",
+      "website": "https://aitoolbuzz.com/chatgpt",
+      "launchDate": "2022-01-01T00:00:00.000Z",
+      "growth": 66
+    },
+    {
+      "name": "Claude",
+      "category": "Operations And Management",
+      "description": "Automated assistant handles tasks and talks naturally.",
+      "website": "https://aitoolbuzz.com/claude",
+      "launchDate": "2023-01-01T00:00:00.000Z",
+      "growth": 31
+    },
+    {
+      "name": "Google Gemini",
+      "category": "Ai And Machine Learning",
+      "description": "Google Gemini is Google DeepMind’s next-generation AI model designed for advanced reasoning, multimodal understanding, and real-world applications across text, code, images, and data.",
+      "website": "https://aitoolbuzz.com/google-gemini",
+      "launchDate": "2023-01-01T00:00:00.000Z",
+      "growth": 81
+    },
+    {
+      "name": "Microsoft Copilot",
+      "category": "Technology And Development",
+      "description": "Microsoft Copilot is an AI-powered assistant integrated across Microsoft 365 and other products, helping users write, code, analyze, and create with natural language prompts.",
+      "website": "https://aitoolbuzz.com/microsoft-copilot",
+      "launchDate": "2023-01-01T00:00:00.000Z",
+      "growth": 0
+    },
+    {
+      "name": "LLaMA",
+      "category": "Ai And Machine Learning",
+      "description": "LLaMA is Meta’s family of large language models designed for speed, efficiency, and advanced reasoning, offering multimodal capabilities and scalable deployment through LLaMA API and Stack.",
+      "website": "https://aitoolbuzz.com/llama",
+      "launchDate": "2022-01-01T00:00:00.000Z",
+      "growth": -3
+    },
+    {
+      "name": "DeepSeek",
+      "category": "Operations And Management",
+      "description": "Unravel the mystery of AGI with curiosity",
+      "website": "https://aitoolbuzz.com/deepseek",
+      "launchDate": "2023-01-01T00:00:00.000Z",
+      "growth": 19
+    },
+    {
+      "name": "Perplexity",
+      "category": "Specialized Technologies",
+      "description": "Provides accurate, real-time answers to any question.",
+      "website": "https://aitoolbuzz.com/perplexity",
+      "launchDate": "2023-01-01T00:00:00.000Z",
+      "growth": 56
+    },
+    {
+      "name": "Grok",
+      "category": "Communication And Support",
+      "description": "Improved knowledge access via chat-based conversations.",
+      "website": "https://aitoolbuzz.com/grok",
+      "launchDate": "2014-01-01T00:00:00.000Z",
+      "growth": 82
+    },
+    {
+      "name": "Leonardo AI",
+      "category": "Media And Content Creation",
+      "description": "Transform your projects with our AI image generator.",
+      "website": "https://aitoolbuzz.com/leonardo-ai",
+      "launchDate": "2022-01-01T00:00:00.000Z",
+      "growth": 11
+    },
+    {
+      "name": "PixVerse",
+      "category": "Media And Content Creation",
+      "description": "Video generation for creators",
+      "website": "https://aitoolbuzz.com/pixverse",
+      "launchDate": "2023-01-01T00:00:00.000Z",
+      "growth": 56
+    },
+    {
+      "name": "ByteDance Seed",
+      "category": "Technology And Development",
+      "description": "The ByteDance Seed team was established in 2023, dedicated to discovering new approaches to general intelligence, pushing the boundaries of AI. The team's research areas include LLM, speech, vision, world models, infrastructure, AI Infra, and next-generation AI interactions. The team operates labs in China, Singapore, the United States, and other locations.",
+      "website": "https://aitoolbuzz.com/bytedance-seed",
+      "launchDate": "2023-01-01T00:00:00.000Z",
+      "growth": 79
+    },
+    {
+      "name": "character.ai",
+      "category": "Communication And Support",
+      "description": "Home of intelligent agents",
+      "website": "https://aitoolbuzz.com/character-ai",
+      "launchDate": "2021-01-01T00:00:00.000Z",
+      "growth": 74
+    },
+    {
+      "name": "Compass AI",
+      "category": "Operations And Management",
+      "description": "Compass AI: Your own Strategy Assistant inside GHL",
+      "website": "https://aitoolbuzz.com/compassai",
+      "launchDate": null,
+      "growth": 47
+    },
+    {
+      "name": "Remini",
+      "category": "Media And Content Creation",
+      "description": "Transforming old photos into HD masterpieces with AI.",
+      "website": "https://aitoolbuzz.com/remini",
+      "launchDate": "2013-01-01T00:00:00.000Z",
+      "growth": 45
+    },
+    {
+      "name": "Nano Banana AI",
+      "category": "Media And Content Creation",
+      "description": "Advanced AI image editor with deep reasoning and superior spatial awareness.",
+      "website": "https://aitoolbuzz.com/nano-banana-ai",
+      "launchDate": "2025-01-01T00:00:00.000Z",
+      "growth": 20
+    },
+    {
+      "name": "AI Fiesta",
+      "category": "Communication And Support",
+      "description": "World’s Most Powerful AIs. One Subscription",
+      "website": "https://aitoolbuzz.com/ai-fiesta",
+      "launchDate": "2025-01-01T00:00:00.000Z",
+      "growth": 21
+    },
+    {
+      "name": "Kruti AI",
+      "category": "Technology And Development",
+      "description": "Kruti is a multilingual AI agent and chatbot by Ola Krutrim, built to perform real-world tasks like booking taxis, ordering food, and more, with support for 13+ Indian languages.",
+      "website": "https://aitoolbuzz.com/kruti-ai",
+      "launchDate": "2025-01-01T00:00:00.000Z",
+      "growth": 1
+    },
+    {
+      "name": "MiniMax Audio",
+      "category": "Media And Content Creation",
+      "description": "MiniMax Audio is a text-to-speech AI tool offering high-quality, natural-sounding voices for various applications, including video games, audiobooks, and e-learning.",
+      "website": "https://aitoolbuzz.com/minimax-audio",
+      "launchDate": "2021-01-01T00:00:00.000Z",
+      "growth": -6
+    },
+    {
+      "name": "Gita GPT by Kishans",
+      "category": "Ai And Machine Learning",
+      "description": "Gita GPT: Find solace in the wisdom of Shree Krishna 🦚",
+      "website": "https://aitoolbuzz.com/gita-gpt-kishans",
+      "launchDate": null,
+      "growth": 79
+    },
+    {
+      "name": "ViralPulseAI",
+      "category": "Marketing And Sales",
+      "description": "ViralPulseAI helps businesses create engaging social media content, analyze performance, and schedule posts across multiple platforms, boosting brand visibility and engagement.",
+      "website": "https://aitoolbuzz.com/viralpulseai",
+      "launchDate": null,
+      "growth": 20
+    },
+    {
+      "name": "Virly",
+      "category": "Marketing And Sales",
+      "description": "Virly is an AI-powered video creation platform that helps users create professional-quality videos quickly and easily.",
+      "website": "https://aitoolbuzz.com/virly",
+      "launchDate": null,
+      "growth": -8
+    },
+    {
+      "name": "Ai2",
+      "category": "Education And Learning",
+      "description": "A non-profit AI research institute founded by Paul Allen, AI2 advances open, high-impact AI through foundational research, open models, and real-world applications in science, environment, and robotics.",
+      "website": "https://aitoolbuzz.com/ai2",
+      "launchDate": "2014-01-01T00:00:00.000Z",
+      "growth": 37
+    },
+    {
+      "name": "Toolmark",
+      "category": "Technology And Development",
+      "description": "Toolmark is an AI-powered tool for analyzing toolmarks and comparing them for forensic investigations.",
+      "website": "https://aitoolbuzz.com/toolmark",
+      "launchDate": null,
+      "growth": 84
+    },
+    {
+      "name": "Google AI Studio",
+      "category": "Technology And Development",
+      "description": "Google AI Studio is a platform for building applications with Gemini, Google’s next-generation multimodal generative AI models.",
+      "website": "https://aitoolbuzz.com/google-ai-studio",
+      "launchDate": "2023-01-01T00:00:00.000Z",
+      "growth": 98
+    },
+    {
+      "name": "Topline Pro",
+      "category": "Marketing And Sales",
+      "description": "Topline Pro is a marketing automation platform designed to streamline your marketing workflows, improve team collaboration, and boost campaign performance. It offers features like email marketing, social media scheduling, lead management, and analytics.",
+      "website": "https://aitoolbuzz.com/topline-pro",
+      "launchDate": "2020-01-01T00:00:00.000Z",
+      "growth": -4
+    },
+    {
+      "name": "Dia Browser",
+      "category": "Technology And Development",
+      "description": "Dia is a browser extension that enhances user interaction with AI models through visual interfaces and simplified tools for exploration and analysis.",
+      "website": "https://aitoolbuzz.com/dia",
+      "launchDate": "2025-01-01T00:00:00.000Z",
+      "growth": 35
+    },
+    {
+      "name": "Latam-GPT",
+      "category": "Specialized Technologies",
+      "description": "A language model made in Latin America, for Latin America",
+      "website": "https://aitoolbuzz.com/latam-gpt",
+      "launchDate": "2025-01-01T00:00:00.000Z",
+      "growth": 52
+    },
+    {
+      "name": "Hubspot Breeze",
+      "category": "Marketing And Sales",
+      "description": "HubSpot Breeze is a unified AI platform embedded within HubSpot CRM that encompasses Breeze Copilot, Breeze Agents, and Breeze Intelligence—designed to automate workflows, enrich data, and streamline content creation across marketing, sales, and service teams.",
+      "website": "https://aitoolbuzz.com/hubspot-breeze",
+      "launchDate": "2006-01-01T00:00:00.000Z",
+      "growth": 34
+    },
+    {
+      "name": "Google Gemini",
+      "category": "Ai And Machine Learning",
+      "description": "Supercharge your imagination, boost productivity, bring ideas to life.",
+      "website": "https://aitoolbuzz.com/google-bard",
+      "launchDate": null,
+      "growth": 52
+    },
+    {
+      "name": "Vintom",
+      "category": "Media And Content Creation",
+      "description": "Vintom is an AI-powered video generation platform that simplifies the creation of marketing videos.",
+      "website": "https://aitoolbuzz.com/vintom",
+      "launchDate": "2014-01-01T00:00:00.000Z",
+      "growth": 4
+    },
+    {
+      "name": "NanoBananaAI",
+      "category": "Media And Content Creation",
+      "description": "Experience the power of nano banana ai technology with our lightweight AI image generator. Create stunning visuals from text descriptions or transform existing images with natural language editing powered by Google nano-banana model.",
+      "website": "https://aitoolbuzz.com/nanobananaai",
+      "launchDate": "2025-01-01T00:00:00.000Z",
+      "growth": 48
+    },
+    {
+      "name": "Choppity",
+      "category": "Media And Content Creation",
+      "description": "Short video creation for social media platforms.",
+      "website": "https://aitoolbuzz.com/choppity",
+      "launchDate": "2022-01-01T00:00:00.000Z",
+      "growth": -6
+    },
+    {
+      "name": "Buzz.ai",
+      "category": "Marketing And Sales",
+      "description": "Buzz.ai is an all-in-one sales engagement platform that combines AI-powered outreach tools with multi-channel campaign management to help sales teams engage more prospects and close more deals efficiently",
+      "website": "https://aitoolbuzz.com/buzz-ai",
+      "launchDate": "2020-01-01T00:00:00.000Z",
+      "growth": 40
+    },
+    {
+      "name": "VideoWeb AI",
+      "category": "Media And Content Creation",
+      "description": "Transform videos with AI-powered video generation.",
+      "website": "https://aitoolbuzz.com/videoweb-ai",
+      "launchDate": "2025-01-01T00:00:00.000Z",
+      "growth": 63
+    },
+    {
+      "name": "DeepStory",
+      "category": "Media And Content Creation",
+      "description": "Meet DeepStory, the best free AI script writer and story generator.",
+      "website": "https://aitoolbuzz.com/deepstory",
+      "launchDate": "2022-01-01T00:00:00.000Z",
+      "growth": 87
+    },
+    {
+      "name": "Zyka",
+      "category": "Technology And Development",
+      "description": "Zyka is an AI-powered digital adoption platform that optimizes SaaS product onboarding, user engagement, and support through customizable AI chatbots and automation.",
+      "website": "https://aitoolbuzz.com/zyka",
+      "launchDate": null,
+      "growth": -2
+    },
+    {
+      "name": "StepFun",
+      "category": "Media And Content Creation",
+      "description": "StepFun AI is your smart and reliable personal assistant, here to help you acquire knowledge, find information, learn languages, unleash creativity in ...",
+      "website": "https://aitoolbuzz.com/stepfun",
+      "launchDate": null,
+      "growth": 82
+    },
+    {
+      "name": "CastFox - AI Podcast Agent",
+      "category": "Ai And Machine Learning",
+      "description": "Smarter listening. Deeper understanding. An AI-powered podcast platform that transforms passive listening into active engagement. Discover, explore, and interact with podcasts using advanced language models - your intelligent podcast assistant is here!",
+      "website": "https://aitoolbuzz.com/castfox-ai-podcast-agent",
+      "launchDate": null,
+      "growth": 57
+    },
+    {
+      "name": "Hailuo AI (MiniMax)",
+      "category": "Media And Content Creation",
+      "description": "Hailuo AI (MiniMax) is an AI video generation tool that simplifies video creation with its intuitive interface and powerful AI capabilities.  Create stunning videos quickly and easily.",
+      "website": "https://aitoolbuzz.com/hailuo-ai",
+      "launchDate": null,
+      "growth": 39
+    },
+    {
+      "name": "Serge",
+      "category": "Communication And Support",
+      "description": "Privacy and control personal assistant.",
+      "website": "https://aitoolbuzz.com/serge",
+      "launchDate": null,
+      "growth": -7
+    },
+    {
+      "name": "AI Detector Pro",
+      "category": "Technology And Development",
+      "description": "Free AI content detector from Brandwell helps mitigate the risk of being punished by Google for using AI generated content. Protect yourself with this tool, which uses multiple finely-tuned AI engines, natural language processing, and semantic analysis algorithms.",
+      "website": "https://aitoolbuzz.com/ai-detector-pro",
+      "launchDate": "2022-01-01T00:00:00.000Z",
+      "growth": 67
+    },
+    {
+      "name": "Bhagavad-Gita-AI",
+      "category": "Ai And Machine Learning",
+      "description": "ChatGPT for Bhagavad Gita i.e. GitaGPT. Now, we can talk to Krishna in our everyday lives.",
+      "website": "https://aitoolbuzz.com/bhagavad-gita-ai",
+      "launchDate": "2023-01-01T00:00:00.000Z",
+      "growth": 51
+    },
+    {
+      "name": "Claros",
+      "category": "Operations And Management",
+      "description": "Product advice and purchase recommendations.",
+      "website": "https://aitoolbuzz.com/claros",
+      "launchDate": null,
+      "growth": 28
+    },
+    {
+      "name": "AI Desk",
+      "category": "Communication And Support",
+      "description": "AI Desk is a customer support automation platform that creates AI agents to answer customer questions, qualify leads, and escalate complex issues—helping businesses deliver 24/7 support and boost conversions.",
+      "website": "https://aitoolbuzz.com/ai-desk",
+      "launchDate": "2024-01-01T00:00:00.000Z",
+      "growth": 18
+    },
+    {
+      "name": "Sanctum",
+      "category": "Media And Content Creation",
+      "description": "Experience secure AI conversations locally on your device.",
+      "website": "https://aitoolbuzz.com/sanctum",
+      "launchDate": "2023-01-01T00:00:00.000Z",
+      "growth": 57
+    },
+    {
+      "name": "TNY.dev",
+      "category": "Ai And Machine Learning",
+      "description": "TNY.dev offers lightweight, developer-friendly tools designed to be affordable, fast, and outgrown as your startup scales, starting at just $9/month.",
+      "website": "https://aitoolbuzz.com/tny-dev",
+      "launchDate": null,
+      "growth": 55
+    },
+    {
+      "name": "Chatbot UI",
+      "category": "Ai And Machine Learning",
+      "description": "Chat with 80+ AI models.",
+      "website": "https://aitoolbuzz.com/chatbot-ui",
+      "launchDate": null,
+      "growth": -3
+    },
+    {
+      "name": "Kreatorflow.AI",
+      "category": "Communication And Support",
+      "description": "Create stunning AI influencers with cutting-edge technology",
+      "website": "https://aitoolbuzz.com/kreatorflow",
+      "launchDate": null,
+      "growth": 19
+    },
+    {
+      "name": "Fellou",
+      "category": "Technology And Development",
+      "description": "The world's first agentic AI browser that automates web and desktop-based tasks. Providing deep search, cross-app workflow automation, images, coding and even music-all with military-grade security.",
+      "website": "https://aitoolbuzz.com/fellou",
+      "launchDate": "2024-01-01T00:00:00.000Z",
+      "growth": -1
+    },
+    {
+      "name": "Photopea",
+      "category": "Media And Content Creation",
+      "description": "Photopea Online Photo Editor lets you edit photos, apply effects, filters, add text, crop or resize pictures. Do Online Photo Editing in your browser for free!",
+      "website": "https://aitoolbuzz.com/photopea",
+      "launchDate": null,
+      "growth": 18
+    },
+    {
+      "name": "BrainSoup",
+      "category": "Operations And Management",
+      "description": "Build an AI team that works for your workflow.",
+      "website": "https://aitoolbuzz.com/brainsoup",
+      "launchDate": null,
+      "growth": 80
+    }
+  ],
+  "countries": [
+    {
+      "country": "United States of America",
+      "year": 2024,
+      "aiIndexScore": 100,
+      "globalRank": 1,
+      "adoptionLevel": "High",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 94
+        },
+        {
+          "name": "Claude",
+          "usage": 87
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 100
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 100
+        },
+        {
+          "name": "LLaMA",
+          "usage": 100
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 98
+        },
+        {
+          "name": "Perplexity",
+          "usage": 100
+        },
+        {
+          "name": "Grok",
+          "usage": 100
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 100
+        },
+        {
+          "name": "PixVerse",
+          "usage": 100
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 100
+        },
+        {
+          "name": "character.ai",
+          "usage": 100
+        },
+        {
+          "name": "Compass AI",
+          "usage": 100
+        },
+        {
+          "name": "Remini",
+          "usage": 100
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 100
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 91
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 100
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 91
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 87
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 100
+        }
+      ]
+    },
+    {
+      "country": "China",
+      "year": 2024,
+      "aiIndexScore": 62.92,
+      "globalRank": 2,
+      "adoptionLevel": "High",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 79
+        },
+        {
+          "name": "Claude",
+          "usage": 55
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 79
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 61
+        },
+        {
+          "name": "LLaMA",
+          "usage": 72
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 60
+        },
+        {
+          "name": "Perplexity",
+          "usage": 54
+        },
+        {
+          "name": "Grok",
+          "usage": 59
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 50
+        },
+        {
+          "name": "PixVerse",
+          "usage": 58
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 55
+        },
+        {
+          "name": "character.ai",
+          "usage": 77
+        },
+        {
+          "name": "Compass AI",
+          "usage": 73
+        },
+        {
+          "name": "Remini",
+          "usage": 72
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 70
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 47
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 47
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 76
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 66
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 74
+        }
+      ]
+    },
+    {
+      "country": "United Kingdom",
+      "year": 2024,
+      "aiIndexScore": 40.93,
+      "globalRank": 3,
+      "adoptionLevel": "Medium",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 34
+        },
+        {
+          "name": "Claude",
+          "usage": 42
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 22
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 43
+        },
+        {
+          "name": "LLaMA",
+          "usage": 42
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 36
+        },
+        {
+          "name": "Perplexity",
+          "usage": 30
+        },
+        {
+          "name": "Grok",
+          "usage": 58
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 49
+        },
+        {
+          "name": "PixVerse",
+          "usage": 49
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 28
+        },
+        {
+          "name": "character.ai",
+          "usage": 42
+        },
+        {
+          "name": "Compass AI",
+          "usage": 43
+        },
+        {
+          "name": "Remini",
+          "usage": 47
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 41
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 31
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 41
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 36
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 52
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 44
+        }
+      ]
+    },
+    {
+      "country": "Canada",
+      "year": 2024,
+      "aiIndexScore": 40.19,
+      "globalRank": 4,
+      "adoptionLevel": "Medium",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 32
+        },
+        {
+          "name": "Claude",
+          "usage": 51
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 42
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 52
+        },
+        {
+          "name": "LLaMA",
+          "usage": 54
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 41
+        },
+        {
+          "name": "Perplexity",
+          "usage": 21
+        },
+        {
+          "name": "Grok",
+          "usage": 40
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 44
+        },
+        {
+          "name": "PixVerse",
+          "usage": 36
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 59
+        },
+        {
+          "name": "character.ai",
+          "usage": 20
+        },
+        {
+          "name": "Compass AI",
+          "usage": 53
+        },
+        {
+          "name": "Remini",
+          "usage": 26
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 32
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 25
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 34
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 24
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 36
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 49
+        }
+      ]
+    },
+    {
+      "country": "Israel",
+      "year": 2024,
+      "aiIndexScore": 39.89,
+      "globalRank": 5,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 38
+        },
+        {
+          "name": "Claude",
+          "usage": 47
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 30
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 36
+        },
+        {
+          "name": "LLaMA",
+          "usage": 55
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 53
+        },
+        {
+          "name": "Perplexity",
+          "usage": 33
+        },
+        {
+          "name": "Grok",
+          "usage": 36
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 50
+        },
+        {
+          "name": "PixVerse",
+          "usage": 23
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 25
+        },
+        {
+          "name": "character.ai",
+          "usage": 27
+        },
+        {
+          "name": "Compass AI",
+          "usage": 48
+        },
+        {
+          "name": "Remini",
+          "usage": 28
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 40
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 26
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 34
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 53
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 23
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 27
+        }
+      ]
+    },
+    {
+      "country": "Singapore",
+      "year": 2024,
+      "aiIndexScore": 38.67,
+      "globalRank": 6,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 20
+        },
+        {
+          "name": "Claude",
+          "usage": 36
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 35
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 22
+        },
+        {
+          "name": "LLaMA",
+          "usage": 24
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 42
+        },
+        {
+          "name": "Perplexity",
+          "usage": 29
+        },
+        {
+          "name": "Grok",
+          "usage": 43
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 18
+        },
+        {
+          "name": "PixVerse",
+          "usage": 30
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 46
+        },
+        {
+          "name": "character.ai",
+          "usage": 47
+        },
+        {
+          "name": "Compass AI",
+          "usage": 49
+        },
+        {
+          "name": "Remini",
+          "usage": 32
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 44
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 38
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 46
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 42
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 23
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 44
+        }
+      ]
+    },
+    {
+      "country": "South Korea",
+      "year": 2024,
+      "aiIndexScore": 38.6,
+      "globalRank": 7,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 30
+        },
+        {
+          "name": "Claude",
+          "usage": 21
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 48
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 32
+        },
+        {
+          "name": "LLaMA",
+          "usage": 52
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 25
+        },
+        {
+          "name": "Perplexity",
+          "usage": 30
+        },
+        {
+          "name": "Grok",
+          "usage": 31
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 29
+        },
+        {
+          "name": "PixVerse",
+          "usage": 44
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 36
+        },
+        {
+          "name": "character.ai",
+          "usage": 22
+        },
+        {
+          "name": "Compass AI",
+          "usage": 35
+        },
+        {
+          "name": "Remini",
+          "usage": 19
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 35
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 20
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 39
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 42
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 21
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 38
+        }
+      ]
+    },
+    {
+      "country": "The Netherlands",
+      "year": 2024,
+      "aiIndexScore": 36.35,
+      "globalRank": 8,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 43
+        },
+        {
+          "name": "Claude",
+          "usage": 21
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 48
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 42
+        },
+        {
+          "name": "LLaMA",
+          "usage": 43
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 33
+        },
+        {
+          "name": "Perplexity",
+          "usage": 16
+        },
+        {
+          "name": "Grok",
+          "usage": 37
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 39
+        },
+        {
+          "name": "PixVerse",
+          "usage": 25
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 51
+        },
+        {
+          "name": "character.ai",
+          "usage": 50
+        },
+        {
+          "name": "Compass AI",
+          "usage": 46
+        },
+        {
+          "name": "Remini",
+          "usage": 32
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 51
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 36
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 23
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 28
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 32
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 48
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": 2024,
+      "aiIndexScore": 36.04,
+      "globalRank": 9,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 53
+        },
+        {
+          "name": "Claude",
+          "usage": 43
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 37
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 47
+        },
+        {
+          "name": "LLaMA",
+          "usage": 42
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 54
+        },
+        {
+          "name": "Perplexity",
+          "usage": 18
+        },
+        {
+          "name": "Grok",
+          "usage": 27
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 34
+        },
+        {
+          "name": "PixVerse",
+          "usage": 36
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 37
+        },
+        {
+          "name": "character.ai",
+          "usage": 25
+        },
+        {
+          "name": "Compass AI",
+          "usage": 40
+        },
+        {
+          "name": "Remini",
+          "usage": 51
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 36
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 19
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 52
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 23
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 33
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 26
+        }
+      ]
+    },
+    {
+      "country": "France",
+      "year": 2024,
+      "aiIndexScore": 34.42,
+      "globalRank": 10,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 23
+        },
+        {
+          "name": "Claude",
+          "usage": 27
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 26
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 29
+        },
+        {
+          "name": "LLaMA",
+          "usage": 31
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 52
+        },
+        {
+          "name": "Perplexity",
+          "usage": 16
+        },
+        {
+          "name": "Grok",
+          "usage": 32
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 53
+        },
+        {
+          "name": "PixVerse",
+          "usage": 42
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 33
+        },
+        {
+          "name": "character.ai",
+          "usage": 36
+        },
+        {
+          "name": "Compass AI",
+          "usage": 35
+        },
+        {
+          "name": "Remini",
+          "usage": 50
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 25
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 52
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 28
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 39
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 48
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 16
+        }
+      ]
+    },
+    {
+      "country": "Australia",
+      "year": 2024,
+      "aiIndexScore": 33.86,
+      "globalRank": 11,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 35
+        },
+        {
+          "name": "Claude",
+          "usage": 30
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 49
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 14
+        },
+        {
+          "name": "LLaMA",
+          "usage": 29
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 43
+        },
+        {
+          "name": "Perplexity",
+          "usage": 22
+        },
+        {
+          "name": "Grok",
+          "usage": 33
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 37
+        },
+        {
+          "name": "PixVerse",
+          "usage": 17
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 39
+        },
+        {
+          "name": "character.ai",
+          "usage": 52
+        },
+        {
+          "name": "Compass AI",
+          "usage": 38
+        },
+        {
+          "name": "Remini",
+          "usage": 53
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 15
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 39
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 18
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 51
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 25
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 39
+        }
+      ]
+    },
+    {
+      "country": "Ireland",
+      "year": 2024,
+      "aiIndexScore": 33.04,
+      "globalRank": 12,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 21
+        },
+        {
+          "name": "Claude",
+          "usage": 26
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 31
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 15
+        },
+        {
+          "name": "LLaMA",
+          "usage": 48
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 29
+        },
+        {
+          "name": "Perplexity",
+          "usage": 38
+        },
+        {
+          "name": "Grok",
+          "usage": 16
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 52
+        },
+        {
+          "name": "PixVerse",
+          "usage": 34
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 36
+        },
+        {
+          "name": "character.ai",
+          "usage": 19
+        },
+        {
+          "name": "Compass AI",
+          "usage": 19
+        },
+        {
+          "name": "Remini",
+          "usage": 43
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 33
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 33
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 49
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 38
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 20
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 48
+        }
+      ]
+    },
+    {
+      "country": "Finland",
+      "year": 2024,
+      "aiIndexScore": 31.36,
+      "globalRank": 13,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 38
+        },
+        {
+          "name": "Claude",
+          "usage": 40
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 12
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 23
+        },
+        {
+          "name": "LLaMA",
+          "usage": 26
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 27
+        },
+        {
+          "name": "Perplexity",
+          "usage": 49
+        },
+        {
+          "name": "Grok",
+          "usage": 27
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 13
+        },
+        {
+          "name": "PixVerse",
+          "usage": 41
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 35
+        },
+        {
+          "name": "character.ai",
+          "usage": 29
+        },
+        {
+          "name": "Compass AI",
+          "usage": 45
+        },
+        {
+          "name": "Remini",
+          "usage": 42
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 26
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 26
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 34
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 38
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 42
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 19
+        }
+      ]
+    },
+    {
+      "country": "Denmark",
+      "year": 2024,
+      "aiIndexScore": 30.87,
+      "globalRank": 14,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 25
+        },
+        {
+          "name": "Claude",
+          "usage": 38
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 27
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 14
+        },
+        {
+          "name": "LLaMA",
+          "usage": 12
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 31
+        },
+        {
+          "name": "Perplexity",
+          "usage": 47
+        },
+        {
+          "name": "Grok",
+          "usage": 36
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 11
+        },
+        {
+          "name": "PixVerse",
+          "usage": 27
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 28
+        },
+        {
+          "name": "character.ai",
+          "usage": 11
+        },
+        {
+          "name": "Compass AI",
+          "usage": 38
+        },
+        {
+          "name": "Remini",
+          "usage": 37
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 32
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 17
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 20
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 40
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 19
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 28
+        }
+      ]
+    },
+    {
+      "country": "Luxembourg",
+      "year": 2024,
+      "aiIndexScore": 30.73,
+      "globalRank": 15,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 30
+        },
+        {
+          "name": "Claude",
+          "usage": 23
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 42
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 22
+        },
+        {
+          "name": "LLaMA",
+          "usage": 19
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 42
+        },
+        {
+          "name": "Perplexity",
+          "usage": 36
+        },
+        {
+          "name": "Grok",
+          "usage": 47
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 25
+        },
+        {
+          "name": "PixVerse",
+          "usage": 41
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 22
+        },
+        {
+          "name": "character.ai",
+          "usage": 23
+        },
+        {
+          "name": "Compass AI",
+          "usage": 26
+        },
+        {
+          "name": "Remini",
+          "usage": 28
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 48
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 25
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 37
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 17
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 12
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 20
+        }
+      ]
+    },
+    {
+      "country": "Japan",
+      "year": 2024,
+      "aiIndexScore": 30.53,
+      "globalRank": 16,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 22
+        },
+        {
+          "name": "Claude",
+          "usage": 41
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 44
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 49
+        },
+        {
+          "name": "LLaMA",
+          "usage": 35
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 25
+        },
+        {
+          "name": "Perplexity",
+          "usage": 50
+        },
+        {
+          "name": "Grok",
+          "usage": 48
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 13
+        },
+        {
+          "name": "PixVerse",
+          "usage": 49
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 38
+        },
+        {
+          "name": "character.ai",
+          "usage": 17
+        },
+        {
+          "name": "Compass AI",
+          "usage": 41
+        },
+        {
+          "name": "Remini",
+          "usage": 49
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 32
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 16
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 38
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 15
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 14
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 23
+        }
+      ]
+    },
+    {
+      "country": "India",
+      "year": 2024,
+      "aiIndexScore": 30.36,
+      "globalRank": 17,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 24
+        },
+        {
+          "name": "Claude",
+          "usage": 22
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 41
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 13
+        },
+        {
+          "name": "LLaMA",
+          "usage": 26
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 25
+        },
+        {
+          "name": "Perplexity",
+          "usage": 46
+        },
+        {
+          "name": "Grok",
+          "usage": 38
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 17
+        },
+        {
+          "name": "PixVerse",
+          "usage": 25
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 22
+        },
+        {
+          "name": "character.ai",
+          "usage": 13
+        },
+        {
+          "name": "Compass AI",
+          "usage": 11
+        },
+        {
+          "name": "Remini",
+          "usage": 22
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 19
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 25
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 26
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 39
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 30
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 19
+        }
+      ]
+    },
+    {
+      "country": "Switzerland",
+      "year": 2024,
+      "aiIndexScore": 30.25,
+      "globalRank": 18,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 20
+        },
+        {
+          "name": "Claude",
+          "usage": 41
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 17
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 49
+        },
+        {
+          "name": "LLaMA",
+          "usage": 27
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 34
+        },
+        {
+          "name": "Perplexity",
+          "usage": 36
+        },
+        {
+          "name": "Grok",
+          "usage": 28
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 19
+        },
+        {
+          "name": "PixVerse",
+          "usage": 40
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 11
+        },
+        {
+          "name": "character.ai",
+          "usage": 47
+        },
+        {
+          "name": "Compass AI",
+          "usage": 46
+        },
+        {
+          "name": "Remini",
+          "usage": 22
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 20
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 34
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 42
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 49
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 11
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 45
+        }
+      ]
+    },
+    {
+      "country": "Sweden",
+      "year": 2024,
+      "aiIndexScore": 29.85,
+      "globalRank": 19,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 12
+        },
+        {
+          "name": "Claude",
+          "usage": 25
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 33
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 37
+        },
+        {
+          "name": "LLaMA",
+          "usage": 34
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 14
+        },
+        {
+          "name": "Perplexity",
+          "usage": 23
+        },
+        {
+          "name": "Grok",
+          "usage": 29
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 18
+        },
+        {
+          "name": "PixVerse",
+          "usage": 43
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 32
+        },
+        {
+          "name": "character.ai",
+          "usage": 21
+        },
+        {
+          "name": "Compass AI",
+          "usage": 14
+        },
+        {
+          "name": "Remini",
+          "usage": 22
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 43
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 38
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 43
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 44
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 28
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 27
+        }
+      ]
+    },
+    {
+      "country": "Hong Kong",
+      "year": 2024,
+      "aiIndexScore": 29.11,
+      "globalRank": 20,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 40
+        },
+        {
+          "name": "Claude",
+          "usage": 34
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 29
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 30
+        },
+        {
+          "name": "LLaMA",
+          "usage": 12
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 17
+        },
+        {
+          "name": "Perplexity",
+          "usage": 35
+        },
+        {
+          "name": "Grok",
+          "usage": 28
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 27
+        },
+        {
+          "name": "PixVerse",
+          "usage": 40
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 11
+        },
+        {
+          "name": "character.ai",
+          "usage": 14
+        },
+        {
+          "name": "Compass AI",
+          "usage": 37
+        },
+        {
+          "name": "Remini",
+          "usage": 27
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 11
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 27
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 12
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 30
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 36
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 40
+        }
+      ]
+    },
+    {
+      "country": "Spain",
+      "year": 2024,
+      "aiIndexScore": 26.95,
+      "globalRank": 21,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 31
+        },
+        {
+          "name": "Claude",
+          "usage": 15
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 13
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 8
+        },
+        {
+          "name": "LLaMA",
+          "usage": 11
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 41
+        },
+        {
+          "name": "Perplexity",
+          "usage": 24
+        },
+        {
+          "name": "Grok",
+          "usage": 25
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 43
+        },
+        {
+          "name": "PixVerse",
+          "usage": 21
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 20
+        },
+        {
+          "name": "character.ai",
+          "usage": 9
+        },
+        {
+          "name": "Compass AI",
+          "usage": 29
+        },
+        {
+          "name": "Remini",
+          "usage": 19
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 43
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 10
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 8
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 31
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 42
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 43
+        }
+      ]
+    },
+    {
+      "country": "Austria",
+      "year": 2024,
+      "aiIndexScore": 26.89,
+      "globalRank": 22,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 15
+        },
+        {
+          "name": "Claude",
+          "usage": 13
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 8
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 44
+        },
+        {
+          "name": "LLaMA",
+          "usage": 36
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 38
+        },
+        {
+          "name": "Perplexity",
+          "usage": 37
+        },
+        {
+          "name": "Grok",
+          "usage": 31
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 23
+        },
+        {
+          "name": "PixVerse",
+          "usage": 44
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 7
+        },
+        {
+          "name": "character.ai",
+          "usage": 35
+        },
+        {
+          "name": "Compass AI",
+          "usage": 31
+        },
+        {
+          "name": "Remini",
+          "usage": 36
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 26
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 43
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 9
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 18
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 37
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 35
+        }
+      ]
+    },
+    {
+      "country": "Estonia",
+      "year": 2024,
+      "aiIndexScore": 26.6,
+      "globalRank": 23,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 36
+        },
+        {
+          "name": "Claude",
+          "usage": 9
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 30
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 13
+        },
+        {
+          "name": "LLaMA",
+          "usage": 43
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 25
+        },
+        {
+          "name": "Perplexity",
+          "usage": 37
+        },
+        {
+          "name": "Grok",
+          "usage": 30
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 7
+        },
+        {
+          "name": "PixVerse",
+          "usage": 8
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 31
+        },
+        {
+          "name": "character.ai",
+          "usage": 13
+        },
+        {
+          "name": "Compass AI",
+          "usage": 14
+        },
+        {
+          "name": "Remini",
+          "usage": 40
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 7
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 11
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 33
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 19
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 34
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 43
+        }
+      ]
+    },
+    {
+      "country": "Taiwan",
+      "year": 2024,
+      "aiIndexScore": 25.79,
+      "globalRank": 24,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 22
+        },
+        {
+          "name": "Claude",
+          "usage": 13
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 6
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 37
+        },
+        {
+          "name": "LLaMA",
+          "usage": 12
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 11
+        },
+        {
+          "name": "Perplexity",
+          "usage": 45
+        },
+        {
+          "name": "Grok",
+          "usage": 14
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 43
+        },
+        {
+          "name": "PixVerse",
+          "usage": 33
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 33
+        },
+        {
+          "name": "character.ai",
+          "usage": 30
+        },
+        {
+          "name": "Compass AI",
+          "usage": 36
+        },
+        {
+          "name": "Remini",
+          "usage": 10
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 39
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 29
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 14
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 33
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 33
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 15
+        }
+      ]
+    },
+    {
+      "country": "Norway",
+      "year": 2024,
+      "aiIndexScore": 25.77,
+      "globalRank": 25,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 36
+        },
+        {
+          "name": "Claude",
+          "usage": 10
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 10
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 22
+        },
+        {
+          "name": "LLaMA",
+          "usage": 40
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 38
+        },
+        {
+          "name": "Perplexity",
+          "usage": 19
+        },
+        {
+          "name": "Grok",
+          "usage": 12
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 18
+        },
+        {
+          "name": "PixVerse",
+          "usage": 6
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 21
+        },
+        {
+          "name": "character.ai",
+          "usage": 29
+        },
+        {
+          "name": "Compass AI",
+          "usage": 28
+        },
+        {
+          "name": "Remini",
+          "usage": 6
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 11
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 14
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 18
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 19
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 37
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 18
+        }
+      ]
+    },
+    {
+      "country": "Saudi Arabia",
+      "year": 2024,
+      "aiIndexScore": 25.6,
+      "globalRank": 26,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 21
+        },
+        {
+          "name": "Claude",
+          "usage": 18
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 25
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 24
+        },
+        {
+          "name": "LLaMA",
+          "usage": 17
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 26
+        },
+        {
+          "name": "Perplexity",
+          "usage": 13
+        },
+        {
+          "name": "Grok",
+          "usage": 6
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 38
+        },
+        {
+          "name": "PixVerse",
+          "usage": 41
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 16
+        },
+        {
+          "name": "character.ai",
+          "usage": 14
+        },
+        {
+          "name": "Compass AI",
+          "usage": 42
+        },
+        {
+          "name": "Remini",
+          "usage": 31
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 32
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 18
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 28
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 6
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 26
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 35
+        }
+      ]
+    },
+    {
+      "country": "Belgium",
+      "year": 2024,
+      "aiIndexScore": 25.52,
+      "globalRank": 27,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 22
+        },
+        {
+          "name": "Claude",
+          "usage": 33
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 21
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 8
+        },
+        {
+          "name": "LLaMA",
+          "usage": 21
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 37
+        },
+        {
+          "name": "Perplexity",
+          "usage": 27
+        },
+        {
+          "name": "Grok",
+          "usage": 21
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 38
+        },
+        {
+          "name": "PixVerse",
+          "usage": 36
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 15
+        },
+        {
+          "name": "character.ai",
+          "usage": 41
+        },
+        {
+          "name": "Compass AI",
+          "usage": 23
+        },
+        {
+          "name": "Remini",
+          "usage": 26
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 15
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 6
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 23
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 23
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 41
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 6
+        }
+      ]
+    },
+    {
+      "country": "Poland",
+      "year": 2024,
+      "aiIndexScore": 25.2,
+      "globalRank": 28,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 38
+        },
+        {
+          "name": "Claude",
+          "usage": 36
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 8
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 44
+        },
+        {
+          "name": "LLaMA",
+          "usage": 14
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 37
+        },
+        {
+          "name": "Perplexity",
+          "usage": 38
+        },
+        {
+          "name": "Grok",
+          "usage": 22
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 37
+        },
+        {
+          "name": "PixVerse",
+          "usage": 16
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 43
+        },
+        {
+          "name": "character.ai",
+          "usage": 44
+        },
+        {
+          "name": "Compass AI",
+          "usage": 40
+        },
+        {
+          "name": "Remini",
+          "usage": 38
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 38
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 16
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 8
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 28
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 8
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 18
+        }
+      ]
+    },
+    {
+      "country": "Slovenia",
+      "year": 2024,
+      "aiIndexScore": 25.19,
+      "globalRank": 29,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 17
+        },
+        {
+          "name": "Claude",
+          "usage": 12
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 15
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 31
+        },
+        {
+          "name": "LLaMA",
+          "usage": 18
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 31
+        },
+        {
+          "name": "Perplexity",
+          "usage": 18
+        },
+        {
+          "name": "Grok",
+          "usage": 27
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 11
+        },
+        {
+          "name": "PixVerse",
+          "usage": 23
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 11
+        },
+        {
+          "name": "character.ai",
+          "usage": 14
+        },
+        {
+          "name": "Compass AI",
+          "usage": 22
+        },
+        {
+          "name": "Remini",
+          "usage": 34
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 32
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 21
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 30
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 12
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 19
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 31
+        }
+      ]
+    },
+    {
+      "country": "New Zealand",
+      "year": 2024,
+      "aiIndexScore": 24.88,
+      "globalRank": 30,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 32
+        },
+        {
+          "name": "Claude",
+          "usage": 36
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 43
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 31
+        },
+        {
+          "name": "LLaMA",
+          "usage": 34
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 42
+        },
+        {
+          "name": "Perplexity",
+          "usage": 6
+        },
+        {
+          "name": "Grok",
+          "usage": 21
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 18
+        },
+        {
+          "name": "PixVerse",
+          "usage": 11
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 9
+        },
+        {
+          "name": "character.ai",
+          "usage": 28
+        },
+        {
+          "name": "Compass AI",
+          "usage": 30
+        },
+        {
+          "name": "Remini",
+          "usage": 42
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 31
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 33
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 42
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 8
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 35
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 42
+        }
+      ]
+    },
+    {
+      "country": "Italy",
+      "year": 2024,
+      "aiIndexScore": 24.45,
+      "globalRank": 31,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 30
+        },
+        {
+          "name": "Claude",
+          "usage": 5
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 26
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 25
+        },
+        {
+          "name": "LLaMA",
+          "usage": 6
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 21
+        },
+        {
+          "name": "Perplexity",
+          "usage": 31
+        },
+        {
+          "name": "Grok",
+          "usage": 14
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 29
+        },
+        {
+          "name": "PixVerse",
+          "usage": 33
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 24
+        },
+        {
+          "name": "character.ai",
+          "usage": 39
+        },
+        {
+          "name": "Compass AI",
+          "usage": 9
+        },
+        {
+          "name": "Remini",
+          "usage": 24
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 9
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 12
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 14
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 6
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 30
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 38
+        }
+      ]
+    },
+    {
+      "country": "Russia",
+      "year": 2024,
+      "aiIndexScore": 21.99,
+      "globalRank": 32,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 39
+        },
+        {
+          "name": "Claude",
+          "usage": 37
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 10
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 15
+        },
+        {
+          "name": "LLaMA",
+          "usage": 23
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 27
+        },
+        {
+          "name": "Perplexity",
+          "usage": 21
+        },
+        {
+          "name": "Grok",
+          "usage": 18
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 41
+        },
+        {
+          "name": "PixVerse",
+          "usage": 38
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 3
+        },
+        {
+          "name": "character.ai",
+          "usage": 8
+        },
+        {
+          "name": "Compass AI",
+          "usage": 3
+        },
+        {
+          "name": "Remini",
+          "usage": 7
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 37
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 15
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 31
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 38
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 3
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 29
+        }
+      ]
+    },
+    {
+      "country": "Malta",
+      "year": 2024,
+      "aiIndexScore": 21.85,
+      "globalRank": 33,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 32
+        },
+        {
+          "name": "Claude",
+          "usage": 15
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 36
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 39
+        },
+        {
+          "name": "LLaMA",
+          "usage": 33
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 27
+        },
+        {
+          "name": "Perplexity",
+          "usage": 35
+        },
+        {
+          "name": "Grok",
+          "usage": 13
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 18
+        },
+        {
+          "name": "PixVerse",
+          "usage": 6
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 5
+        },
+        {
+          "name": "character.ai",
+          "usage": 39
+        },
+        {
+          "name": "Compass AI",
+          "usage": 18
+        },
+        {
+          "name": "Remini",
+          "usage": 20
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 10
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 29
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 11
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 33
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 2
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 15
+        }
+      ]
+    },
+    {
+      "country": "United Arab Emirates",
+      "year": 2024,
+      "aiIndexScore": 21.17,
+      "globalRank": 34,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 41
+        },
+        {
+          "name": "Claude",
+          "usage": 7
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 34
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 30
+        },
+        {
+          "name": "LLaMA",
+          "usage": 38
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 10
+        },
+        {
+          "name": "Perplexity",
+          "usage": 12
+        },
+        {
+          "name": "Grok",
+          "usage": 3
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 31
+        },
+        {
+          "name": "PixVerse",
+          "usage": 12
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 6
+        },
+        {
+          "name": "character.ai",
+          "usage": 18
+        },
+        {
+          "name": "Compass AI",
+          "usage": 2
+        },
+        {
+          "name": "Remini",
+          "usage": 13
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 33
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 6
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 28
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 30
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 8
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 27
+        }
+      ]
+    },
+    {
+      "country": "Portugal",
+      "year": 2024,
+      "aiIndexScore": 20.89,
+      "globalRank": 35,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 37
+        },
+        {
+          "name": "Claude",
+          "usage": 7
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 24
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 36
+        },
+        {
+          "name": "LLaMA",
+          "usage": 11
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 17
+        },
+        {
+          "name": "Perplexity",
+          "usage": 30
+        },
+        {
+          "name": "Grok",
+          "usage": 1
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 10
+        },
+        {
+          "name": "PixVerse",
+          "usage": 23
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 40
+        },
+        {
+          "name": "character.ai",
+          "usage": 30
+        },
+        {
+          "name": "Compass AI",
+          "usage": 21
+        },
+        {
+          "name": "Remini",
+          "usage": 37
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 21
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 30
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 28
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 25
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 38
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 8
+        }
+      ]
+    },
+    {
+      "country": "Czech Republic",
+      "year": 2024,
+      "aiIndexScore": 20.31,
+      "globalRank": 36,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 20
+        },
+        {
+          "name": "Claude",
+          "usage": 11
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 32
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 8
+        },
+        {
+          "name": "LLaMA",
+          "usage": 39
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 22
+        },
+        {
+          "name": "Perplexity",
+          "usage": 6
+        },
+        {
+          "name": "Grok",
+          "usage": 29
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 20
+        },
+        {
+          "name": "PixVerse",
+          "usage": 20
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 35
+        },
+        {
+          "name": "character.ai",
+          "usage": 5
+        },
+        {
+          "name": "Compass AI",
+          "usage": 9
+        },
+        {
+          "name": "Remini",
+          "usage": 30
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 24
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 16
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 23
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 11
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 39
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 18
+        }
+      ]
+    },
+    {
+      "country": "Iceland",
+      "year": 2024,
+      "aiIndexScore": 19.81,
+      "globalRank": 37,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 16
+        },
+        {
+          "name": "Claude",
+          "usage": 33
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 7
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 18
+        },
+        {
+          "name": "LLaMA",
+          "usage": 21
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 18
+        },
+        {
+          "name": "Perplexity",
+          "usage": 37
+        },
+        {
+          "name": "Grok",
+          "usage": 24
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 5
+        },
+        {
+          "name": "PixVerse",
+          "usage": 16
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 28
+        },
+        {
+          "name": "character.ai",
+          "usage": 24
+        },
+        {
+          "name": "Compass AI",
+          "usage": 31
+        },
+        {
+          "name": "Remini",
+          "usage": 27
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 31
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 24
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 19
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 6
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 7
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 38
+        }
+      ]
+    },
+    {
+      "country": "Lithuania",
+      "year": 2024,
+      "aiIndexScore": 19.59,
+      "globalRank": 38,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 6
+        },
+        {
+          "name": "Claude",
+          "usage": 23
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 30
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 34
+        },
+        {
+          "name": "LLaMA",
+          "usage": 9
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 38
+        },
+        {
+          "name": "Perplexity",
+          "usage": 9
+        },
+        {
+          "name": "Grok",
+          "usage": 29
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 3
+        },
+        {
+          "name": "PixVerse",
+          "usage": 9
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 29
+        },
+        {
+          "name": "character.ai",
+          "usage": 5
+        },
+        {
+          "name": "Compass AI",
+          "usage": 35
+        },
+        {
+          "name": "Remini",
+          "usage": 3
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 24
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 24
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 17
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 0
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 13
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 7
+        }
+      ]
+    },
+    {
+      "country": "Brazil",
+      "year": 2024,
+      "aiIndexScore": 18.89,
+      "globalRank": 39,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 15
+        },
+        {
+          "name": "Claude",
+          "usage": 31
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 28
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 25
+        },
+        {
+          "name": "LLaMA",
+          "usage": 33
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 12
+        },
+        {
+          "name": "Perplexity",
+          "usage": 0
+        },
+        {
+          "name": "Grok",
+          "usage": 30
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 34
+        },
+        {
+          "name": "PixVerse",
+          "usage": 26
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 12
+        },
+        {
+          "name": "character.ai",
+          "usage": 29
+        },
+        {
+          "name": "Compass AI",
+          "usage": 15
+        },
+        {
+          "name": "Remini",
+          "usage": 1
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 13
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 11
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 12
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 12
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 29
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 11
+        }
+      ]
+    },
+    {
+      "country": "Greece",
+      "year": 2024,
+      "aiIndexScore": 17.33,
+      "globalRank": 40,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 15
+        },
+        {
+          "name": "Claude",
+          "usage": 2
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 22
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 33
+        },
+        {
+          "name": "LLaMA",
+          "usage": 8
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 36
+        },
+        {
+          "name": "Perplexity",
+          "usage": 19
+        },
+        {
+          "name": "Grok",
+          "usage": 4
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 15
+        },
+        {
+          "name": "PixVerse",
+          "usage": 0
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 0
+        },
+        {
+          "name": "character.ai",
+          "usage": 0
+        },
+        {
+          "name": "Compass AI",
+          "usage": 27
+        },
+        {
+          "name": "Remini",
+          "usage": 33
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 30
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 18
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 23
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 4
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 8
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 18
+        }
+      ]
+    },
+    {
+      "country": "Slovakia",
+      "year": 2024,
+      "aiIndexScore": 17.24,
+      "globalRank": 41,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 10
+        },
+        {
+          "name": "Claude",
+          "usage": 23
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 21
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 10
+        },
+        {
+          "name": "LLaMA",
+          "usage": 14
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 13
+        },
+        {
+          "name": "Perplexity",
+          "usage": 7
+        },
+        {
+          "name": "Grok",
+          "usage": 24
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 4
+        },
+        {
+          "name": "PixVerse",
+          "usage": 21
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 19
+        },
+        {
+          "name": "character.ai",
+          "usage": 26
+        },
+        {
+          "name": "Compass AI",
+          "usage": 36
+        },
+        {
+          "name": "Remini",
+          "usage": 10
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 7
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 23
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 0
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 22
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 3
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 16
+        }
+      ]
+    },
+    {
+      "country": "Hungary",
+      "year": 2024,
+      "aiIndexScore": 17,
+      "globalRank": 42,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 0
+        },
+        {
+          "name": "Claude",
+          "usage": 32
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 32
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 16
+        },
+        {
+          "name": "LLaMA",
+          "usage": 13
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 24
+        },
+        {
+          "name": "Perplexity",
+          "usage": 8
+        },
+        {
+          "name": "Grok",
+          "usage": 4
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 13
+        },
+        {
+          "name": "PixVerse",
+          "usage": 9
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 11
+        },
+        {
+          "name": "character.ai",
+          "usage": 31
+        },
+        {
+          "name": "Compass AI",
+          "usage": 0
+        },
+        {
+          "name": "Remini",
+          "usage": 16
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 7
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 0
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 8
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 33
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 26
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 28
+        }
+      ]
+    },
+    {
+      "country": "Malaysia",
+      "year": 2024,
+      "aiIndexScore": 16.66,
+      "globalRank": 43,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 0
+        },
+        {
+          "name": "Claude",
+          "usage": 7
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 18
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 0
+        },
+        {
+          "name": "LLaMA",
+          "usage": 2
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 15
+        },
+        {
+          "name": "Perplexity",
+          "usage": 21
+        },
+        {
+          "name": "Grok",
+          "usage": 23
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 31
+        },
+        {
+          "name": "PixVerse",
+          "usage": 14
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 0
+        },
+        {
+          "name": "character.ai",
+          "usage": 3
+        },
+        {
+          "name": "Compass AI",
+          "usage": 27
+        },
+        {
+          "name": "Remini",
+          "usage": 0
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 31
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 0
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 13
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 7
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 10
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 23
+        }
+      ]
+    },
+    {
+      "country": "Mexico",
+      "year": 2024,
+      "aiIndexScore": 15.48,
+      "globalRank": 44,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 15
+        },
+        {
+          "name": "Claude",
+          "usage": 30
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 3
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 11
+        },
+        {
+          "name": "LLaMA",
+          "usage": 31
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 26
+        },
+        {
+          "name": "Perplexity",
+          "usage": 0
+        },
+        {
+          "name": "Grok",
+          "usage": 23
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 6
+        },
+        {
+          "name": "PixVerse",
+          "usage": 2
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 3
+        },
+        {
+          "name": "character.ai",
+          "usage": 8
+        },
+        {
+          "name": "Compass AI",
+          "usage": 10
+        },
+        {
+          "name": "Remini",
+          "usage": 13
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 2
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 16
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 22
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 1
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 30
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 14
+        }
+      ]
+    },
+    {
+      "country": "Chile",
+      "year": 2024,
+      "aiIndexScore": 15.33,
+      "globalRank": 45,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 29
+        },
+        {
+          "name": "Claude",
+          "usage": 6
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 15
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 27
+        },
+        {
+          "name": "LLaMA",
+          "usage": 24
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 30
+        },
+        {
+          "name": "Perplexity",
+          "usage": 5
+        },
+        {
+          "name": "Grok",
+          "usage": 32
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 18
+        },
+        {
+          "name": "PixVerse",
+          "usage": 25
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 14
+        },
+        {
+          "name": "character.ai",
+          "usage": 17
+        },
+        {
+          "name": "Compass AI",
+          "usage": 0
+        },
+        {
+          "name": "Remini",
+          "usage": 1
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 28
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 11
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 0
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 35
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 17
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 0
+        }
+      ]
+    },
+    {
+      "country": "Argentina",
+      "year": 2024,
+      "aiIndexScore": 15.24,
+      "globalRank": 46,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 3
+        },
+        {
+          "name": "Claude",
+          "usage": 31
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 0
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 0
+        },
+        {
+          "name": "LLaMA",
+          "usage": 23
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 6
+        },
+        {
+          "name": "Perplexity",
+          "usage": 33
+        },
+        {
+          "name": "Grok",
+          "usage": 13
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 16
+        },
+        {
+          "name": "PixVerse",
+          "usage": 3
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 19
+        },
+        {
+          "name": "character.ai",
+          "usage": 21
+        },
+        {
+          "name": "Compass AI",
+          "usage": 0
+        },
+        {
+          "name": "Remini",
+          "usage": 1
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 21
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 29
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 1
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 24
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 11
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 28
+        }
+      ]
+    },
+    {
+      "country": "Qatar",
+      "year": 2024,
+      "aiIndexScore": 14.66,
+      "globalRank": 47,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 17
+        },
+        {
+          "name": "Claude",
+          "usage": 19
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 33
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 13
+        },
+        {
+          "name": "LLaMA",
+          "usage": 32
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 28
+        },
+        {
+          "name": "Perplexity",
+          "usage": 0
+        },
+        {
+          "name": "Grok",
+          "usage": 22
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 28
+        },
+        {
+          "name": "PixVerse",
+          "usage": 3
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 2
+        },
+        {
+          "name": "character.ai",
+          "usage": 8
+        },
+        {
+          "name": "Compass AI",
+          "usage": 27
+        },
+        {
+          "name": "Remini",
+          "usage": 11
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 19
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 23
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 4
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 25
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 22
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 18
+        }
+      ]
+    },
+    {
+      "country": "Turkey",
+      "year": 2024,
+      "aiIndexScore": 14.39,
+      "globalRank": 48,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 25
+        },
+        {
+          "name": "Claude",
+          "usage": 16
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 12
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 3
+        },
+        {
+          "name": "LLaMA",
+          "usage": 5
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 27
+        },
+        {
+          "name": "Perplexity",
+          "usage": 32
+        },
+        {
+          "name": "Grok",
+          "usage": 0
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 0
+        },
+        {
+          "name": "PixVerse",
+          "usage": 13
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 15
+        },
+        {
+          "name": "character.ai",
+          "usage": 0
+        },
+        {
+          "name": "Compass AI",
+          "usage": 0
+        },
+        {
+          "name": "Remini",
+          "usage": 23
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 1
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 11
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 10
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 3
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 0
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 28
+        }
+      ]
+    },
+    {
+      "country": "Colombia",
+      "year": 2024,
+      "aiIndexScore": 13.85,
+      "globalRank": 49,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 13
+        },
+        {
+          "name": "Claude",
+          "usage": 2
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 15
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 7
+        },
+        {
+          "name": "LLaMA",
+          "usage": 10
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 0
+        },
+        {
+          "name": "Perplexity",
+          "usage": 29
+        },
+        {
+          "name": "Grok",
+          "usage": 29
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 0
+        },
+        {
+          "name": "PixVerse",
+          "usage": 27
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 10
+        },
+        {
+          "name": "character.ai",
+          "usage": 33
+        },
+        {
+          "name": "Compass AI",
+          "usage": 26
+        },
+        {
+          "name": "Remini",
+          "usage": 19
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 18
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 27
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 32
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 0
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 30
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 0
+        }
+      ]
+    },
+    {
+      "country": "Uruguay",
+      "year": 2024,
+      "aiIndexScore": 13.27,
+      "globalRank": 50,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 0
+        },
+        {
+          "name": "Claude",
+          "usage": 0
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 0
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 11
+        },
+        {
+          "name": "LLaMA",
+          "usage": 32
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 30
+        },
+        {
+          "name": "Perplexity",
+          "usage": 25
+        },
+        {
+          "name": "Grok",
+          "usage": 19
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 30
+        },
+        {
+          "name": "PixVerse",
+          "usage": 2
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 23
+        },
+        {
+          "name": "character.ai",
+          "usage": 8
+        },
+        {
+          "name": "Compass AI",
+          "usage": 13
+        },
+        {
+          "name": "Remini",
+          "usage": 22
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 27
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 6
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 14
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 13
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 9
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 8
+        }
+      ]
+    },
+    {
+      "country": "Bahrain",
+      "year": 2024,
+      "aiIndexScore": 11.79,
+      "globalRank": 51,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 1
+        },
+        {
+          "name": "Claude",
+          "usage": 0
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 1
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 27
+        },
+        {
+          "name": "LLaMA",
+          "usage": 30
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 27
+        },
+        {
+          "name": "Perplexity",
+          "usage": 13
+        },
+        {
+          "name": "Grok",
+          "usage": 30
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 26
+        },
+        {
+          "name": "PixVerse",
+          "usage": 28
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 16
+        },
+        {
+          "name": "character.ai",
+          "usage": 21
+        },
+        {
+          "name": "Compass AI",
+          "usage": 19
+        },
+        {
+          "name": "Remini",
+          "usage": 28
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 1
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 14
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 15
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 20
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 0
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 0
+        }
+      ]
+    },
+    {
+      "country": "Vietnam",
+      "year": 2024,
+      "aiIndexScore": 11.62,
+      "globalRank": 52,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 11
+        },
+        {
+          "name": "Claude",
+          "usage": 0
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 18
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 12
+        },
+        {
+          "name": "LLaMA",
+          "usage": 19
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 19
+        },
+        {
+          "name": "Perplexity",
+          "usage": 3
+        },
+        {
+          "name": "Grok",
+          "usage": 23
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 0
+        },
+        {
+          "name": "PixVerse",
+          "usage": 23
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 10
+        },
+        {
+          "name": "character.ai",
+          "usage": 9
+        },
+        {
+          "name": "Compass AI",
+          "usage": 14
+        },
+        {
+          "name": "Remini",
+          "usage": 17
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 15
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 0
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 30
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 24
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 23
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 0
+        }
+      ]
+    },
+    {
+      "country": "Indonesia",
+      "year": 2024,
+      "aiIndexScore": 11.47,
+      "globalRank": 53,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 17
+        },
+        {
+          "name": "Claude",
+          "usage": 13
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 21
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 18
+        },
+        {
+          "name": "LLaMA",
+          "usage": 7
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 5
+        },
+        {
+          "name": "Perplexity",
+          "usage": 16
+        },
+        {
+          "name": "Grok",
+          "usage": 29
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 0
+        },
+        {
+          "name": "PixVerse",
+          "usage": 0
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 22
+        },
+        {
+          "name": "character.ai",
+          "usage": 13
+        },
+        {
+          "name": "Compass AI",
+          "usage": 9
+        },
+        {
+          "name": "Remini",
+          "usage": 9
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 6
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 13
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 0
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 15
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 29
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 0
+        }
+      ]
+    },
+    {
+      "country": "Tunisia",
+      "year": 2024,
+      "aiIndexScore": 9.87,
+      "globalRank": 54,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 21
+        },
+        {
+          "name": "Claude",
+          "usage": 24
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 10
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 3
+        },
+        {
+          "name": "LLaMA",
+          "usage": 0
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 0
+        },
+        {
+          "name": "Perplexity",
+          "usage": 29
+        },
+        {
+          "name": "Grok",
+          "usage": 5
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 7
+        },
+        {
+          "name": "PixVerse",
+          "usage": 1
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 0
+        },
+        {
+          "name": "character.ai",
+          "usage": 0
+        },
+        {
+          "name": "Compass AI",
+          "usage": 5
+        },
+        {
+          "name": "Remini",
+          "usage": 6
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 2
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 26
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 0
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 0
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 21
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 18
+        }
+      ]
+    },
+    {
+      "country": "South Africa",
+      "year": 2024,
+      "aiIndexScore": 9.71,
+      "globalRank": 55,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 21
+        },
+        {
+          "name": "Claude",
+          "usage": 5
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 0
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 5
+        },
+        {
+          "name": "LLaMA",
+          "usage": 29
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 23
+        },
+        {
+          "name": "Perplexity",
+          "usage": 15
+        },
+        {
+          "name": "Grok",
+          "usage": 0
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 0
+        },
+        {
+          "name": "PixVerse",
+          "usage": 21
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 22
+        },
+        {
+          "name": "character.ai",
+          "usage": 1
+        },
+        {
+          "name": "Compass AI",
+          "usage": 29
+        },
+        {
+          "name": "Remini",
+          "usage": 27
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 0
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 10
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 16
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 24
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 0
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 0
+        }
+      ]
+    },
+    {
+      "country": "Morocco",
+      "year": 2024,
+      "aiIndexScore": 8.87,
+      "globalRank": 56,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 0
+        },
+        {
+          "name": "Claude",
+          "usage": 7
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 0
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 9
+        },
+        {
+          "name": "LLaMA",
+          "usage": 0
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 16
+        },
+        {
+          "name": "Perplexity",
+          "usage": 3
+        },
+        {
+          "name": "Grok",
+          "usage": 8
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 0
+        },
+        {
+          "name": "PixVerse",
+          "usage": 0
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 9
+        },
+        {
+          "name": "character.ai",
+          "usage": 17
+        },
+        {
+          "name": "Compass AI",
+          "usage": 22
+        },
+        {
+          "name": "Remini",
+          "usage": 0
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 9
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 9
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 0
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 9
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 13
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 19
+        }
+      ]
+    },
+    {
+      "country": "Armenia",
+      "year": 2024,
+      "aiIndexScore": 8.49,
+      "globalRank": 57,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 0
+        },
+        {
+          "name": "Claude",
+          "usage": 3
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 0
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 27
+        },
+        {
+          "name": "LLaMA",
+          "usage": 0
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 0
+        },
+        {
+          "name": "Perplexity",
+          "usage": 26
+        },
+        {
+          "name": "Grok",
+          "usage": 15
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 3
+        },
+        {
+          "name": "PixVerse",
+          "usage": 5
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 0
+        },
+        {
+          "name": "character.ai",
+          "usage": 23
+        },
+        {
+          "name": "Compass AI",
+          "usage": 19
+        },
+        {
+          "name": "Remini",
+          "usage": 3
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 9
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 2
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 0
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 15
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 0
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 5
+        }
+      ]
+    },
+    {
+      "country": "Sri Lanka",
+      "year": 2024,
+      "aiIndexScore": 6.62,
+      "globalRank": 58,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 9
+        },
+        {
+          "name": "Claude",
+          "usage": 19
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 3
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 0
+        },
+        {
+          "name": "LLaMA",
+          "usage": 22
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 0
+        },
+        {
+          "name": "Perplexity",
+          "usage": 14
+        },
+        {
+          "name": "Grok",
+          "usage": 0
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 16
+        },
+        {
+          "name": "PixVerse",
+          "usage": 14
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 10
+        },
+        {
+          "name": "character.ai",
+          "usage": 19
+        },
+        {
+          "name": "Compass AI",
+          "usage": 0
+        },
+        {
+          "name": "Remini",
+          "usage": 9
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 10
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 0
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 2
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 25
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 13
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 15
+        }
+      ]
+    },
+    {
+      "country": "Egypt",
+      "year": 2024,
+      "aiIndexScore": 4.83,
+      "globalRank": 59,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 0
+        },
+        {
+          "name": "Claude",
+          "usage": 18
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 0
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 3
+        },
+        {
+          "name": "LLaMA",
+          "usage": 0
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 10
+        },
+        {
+          "name": "Perplexity",
+          "usage": 11
+        },
+        {
+          "name": "Grok",
+          "usage": 16
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 0
+        },
+        {
+          "name": "PixVerse",
+          "usage": 12
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 23
+        },
+        {
+          "name": "character.ai",
+          "usage": 0
+        },
+        {
+          "name": "Compass AI",
+          "usage": 17
+        },
+        {
+          "name": "Remini",
+          "usage": 24
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 4
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 0
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 24
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 0
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 0
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 0
+        }
+      ]
+    },
+    {
+      "country": "Kenya",
+      "year": 2024,
+      "aiIndexScore": 2.3,
+      "globalRank": 60,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 20
+        },
+        {
+          "name": "Claude",
+          "usage": 1
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 1
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 0
+        },
+        {
+          "name": "LLaMA",
+          "usage": 0
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 3
+        },
+        {
+          "name": "Perplexity",
+          "usage": 4
+        },
+        {
+          "name": "Grok",
+          "usage": 0
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 15
+        },
+        {
+          "name": "PixVerse",
+          "usage": 15
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 3
+        },
+        {
+          "name": "character.ai",
+          "usage": 6
+        },
+        {
+          "name": "Compass AI",
+          "usage": 21
+        },
+        {
+          "name": "Remini",
+          "usage": 0
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 21
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 0
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 2
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 9
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 4
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 0
+        }
+      ]
+    },
+    {
+      "country": "Nigeria",
+      "year": 2024,
+      "aiIndexScore": 1.38,
+      "globalRank": 61,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 7
+        },
+        {
+          "name": "Claude",
+          "usage": 0
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 6
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 2
+        },
+        {
+          "name": "LLaMA",
+          "usage": 0
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 0
+        },
+        {
+          "name": "Perplexity",
+          "usage": 20
+        },
+        {
+          "name": "Grok",
+          "usage": 0
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 14
+        },
+        {
+          "name": "PixVerse",
+          "usage": 0
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 0
+        },
+        {
+          "name": "character.ai",
+          "usage": 0
+        },
+        {
+          "name": "Compass AI",
+          "usage": 2
+        },
+        {
+          "name": "Remini",
+          "usage": 20
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 0
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 11
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 3
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 0
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 0
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 5
+        }
+      ]
+    },
+    {
+      "country": "Pakistan",
+      "year": 2024,
+      "aiIndexScore": 0,
+      "globalRank": 62,
+      "adoptionLevel": "Low",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "usage": 0
+        },
+        {
+          "name": "Claude",
+          "usage": 0
+        },
+        {
+          "name": "Google Gemini",
+          "usage": 0
+        },
+        {
+          "name": "Microsoft Copilot",
+          "usage": 0
+        },
+        {
+          "name": "LLaMA",
+          "usage": 0
+        },
+        {
+          "name": "DeepSeek",
+          "usage": 9
+        },
+        {
+          "name": "Perplexity",
+          "usage": 0
+        },
+        {
+          "name": "Grok",
+          "usage": 0
+        },
+        {
+          "name": "Leonardo AI",
+          "usage": 0
+        },
+        {
+          "name": "PixVerse",
+          "usage": 19
+        },
+        {
+          "name": "ByteDance Seed",
+          "usage": 8
+        },
+        {
+          "name": "character.ai",
+          "usage": 12
+        },
+        {
+          "name": "Compass AI",
+          "usage": 0
+        },
+        {
+          "name": "Remini",
+          "usage": 0
+        },
+        {
+          "name": "Nano Banana AI",
+          "usage": 11
+        },
+        {
+          "name": "AI Fiesta",
+          "usage": 0
+        },
+        {
+          "name": "Kruti AI",
+          "usage": 0
+        },
+        {
+          "name": "MiniMax Audio",
+          "usage": 0
+        },
+        {
+          "name": "Gita GPT by Kishans",
+          "usage": 18
+        },
+        {
+          "name": "ViralPulseAI",
+          "usage": 6
+        }
+      ]
+    }
+  ]
+}

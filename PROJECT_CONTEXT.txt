@@ -1,0 +1,163 @@
+PROJECT OVERVIEW
+Project Purpose: AI Analytics Dashboard and Tools Catalog.
+Target Users:
+- Normal Users: Browse AI tools, view analytics dashboards.
+- Admins: Manage tools, categories, and global analytics data.
+Core Functionality:
+- Public-facing catalog of AI tools with search and filtering.
+- Admin panel for CRUD operations on tools and data.
+- Secure authentication for administrative access.
+
+TECH STACK
+Frontend:
+- Framework: React (Vite)
+- Routing: React Router (react-router-dom)
+- Styling: Tailwind CSS
+- Icons: Lucide React
+Backend:
+- Runtime: Node.js
+- Framework: Express.js
+- Database: MongoDB (Local instance)
+- ODM: Mongoose
+Authentication:
+- Method: JWT (JSON Web Tokens)
+- Hashing: bcryptjs
+
+USER VS ADMIN SEPARATION (CRITICAL)
+User Experience:
+- Routes: /, /dashboard, /ai-tools, /tools/:id
+- Layout: Uses PublicLayout and UserSidebar.
+- Visibility: Completely unaware of admin existence. No links to admin allowed.
+Admin Experience:
+- Routes: /admin/login, /admin/dashboard, /admin/tools, /admin/categories, /admin/countries
+- Layout: Uses AdminLayout with a dedicated, isolated sidebar.
+- Visibility: Accessible only via direct URL or redirect from login.
+- Security: Protected by authentication.
+
+ROUTING ARCHITECTURE
+App.jsx Structure:
+1. Public Routes: Wrapped in PublicLayout.
+   - / (Home)
+   - /dashboard (Alias to Home)
+   - /ai-tools (Catalog)
+   - /tools/:id (Details)
+2. Admin Login: Standalone route (/admin/login).
+3. Protected Admin Routes: Wrapped in AdminRoute guard, then AdminLayout.
+   - /admin/dashboard
+   - /admin/tools
+   - /admin/categories
+   - /admin/countries
+
+AdminRoute Guard Logic:
+- Checks localStorage for 'adminToken'.
+- If present: Renders Outlet (Admin content).
+- If absent: Redirects to /admin/login.
+
+Redirect Behavior:
+- Unauthenticated access to /admin/* -> Redirects to /admin/login.
+- Authenticated access to /admin -> Redirects to /admin/dashboard.
+
+COMPONENT RESPONSIBILITIES
+UserSidebar.jsx:
+- Navigation for standard users.
+- Contains links ONLY to Dashboard and AI Tools Catalog.
+- Must NEVER contain admin links.
+
+PublicLayout.jsx:
+- Wrapper for user-facing pages.
+- Renders UserSidebar and the page content.
+
+AdminLayout.jsx:
+- Wrapper for protected admin pages.
+- Contains its own hardcoded sidebar navigation for admin tasks.
+- Handles admin logout.
+
+AdminRoute (in App.jsx):
+- Higher-Order Component (HOC) for route protection.
+- Verifies authentication token before rendering child routes.
+
+Sidebar.jsx:
+- REMOVED. Obsolete component that mixed user and admin concerns. Do not reintroduce.
+
+AUTHENTICATION DETAILS
+- Type: Admin-only authentication.
+- Storage: JWT stored in localStorage as 'adminToken'.
+- Backend:
+  - POST /api/admin/login
+  - Validates email/password.
+  - Returns JWT token and user info.
+- Password Security: Passwords hashed using bcrypt before storage in MongoDB.
+
+DATABASE STRUCTURE (MONGODB)
+Type: Local MongoDB instance.
+Database Name: ai-tools
+
+Collections:
+1. admins: Admin accounts.
+   - Fields: email (String), password (String, hashed).
+2. aitools: AI software listings.
+3. categories: Categories for AI tools.
+4. countryusages: Analytics data for AI usage by country.
+
+Note: Plaintext passwords are NEVER stored in the database.
+
+SEED SCRIPT BEHAVIOR
+Script: backend/scripts/seedDatabase.js
+Purpose:
+- Clears existing data (Tools, Admins, Usage Data).
+- Repopulates database with fresh data from datasets.
+- Creates a default Admin user.
+
+Admin Creation Logic:
+- Looks for ADMIN_EMAIL in .env (Default: dipeshkunwar8@gmail.com)
+- Looks for ADMIN_PASSWORD in .env (Default: dkwarrier)
+- Hashes the password and saves the admin user.
+
+Usage:
+- Run 'node backend/scripts/seedDatabase.js' to reset the DB and restore the admin user.
+
+ENVIRONMENT VARIABLES
+Location: backend/.env
+Context: Local development configuration.
+
+Variables:
+- PORT: Backend server port (Default: 5000 or 5001).
+- MONGO_URI: MongoDB connection string.
+- JWT_SECRET: Secret key for signing tokens.
+- ADMIN_EMAIL: Email for the seeded admin user.
+- ADMIN_PASSWORD: Password for the seeded admin user.
+
+Warning:
+- .env is for local config only. Do not commit to version control.
+- Changing ADMIN_* variables requires re-running the seed script to take effect.
+
+HOW TO MAKE COMMON CHANGES
+1. Changing Admin Credentials:
+   - Update ADMIN_EMAIL and ADMIN_PASSWORD in backend/.env.
+   - Run 'node backend/scripts/seedDatabase.js' to regenerate the admin user.
+
+2. Adding New Admin Page:
+   - Create component in frontend/src/pages/.
+   - Add route to App.jsx inside the AdminRoute/AdminLayout group.
+   - Add link to navItems array in frontend/src/components/AdminLayout.jsx.
+
+3. Adding New User Page:
+   - Create component in frontend/src/pages/.
+   - Add route to App.jsx inside the PublicLayout group.
+   - Add link to navItems array in frontend/src/components/UserSidebar.jsx (if navigation is needed).
+
+4. Extending Admin Roles:
+   - Update Admin model schema to include a 'role' field.
+   - Update AdminRoute in App.jsx to check token payload for role.
+
+SECURITY NOTES
+- Admin routes are protected by client-side guards (AdminRoute) and backend middleware (protect).
+- Helper functions like 'generateToken' ensure standard JWT practices.
+- Passwords are always hashed. Never manually insert a plaintext password into the 'admins' collection; it will fail login validation.
+- User UI isolation prevents unauthorized discovery of admin capabilities.
+
+IMPORTANT CONSTRAINTS
+- DO NOT reintroduce a shared Sidebar component. Keep User and Admin navigation completely separate.
+- DO NOT expose any /admin routes in the PublicLayout or UserSidebar.
+- DO NOT store passwords in plaintext.
+- DO NOT bypass the AdminRoute guard for any management features.
