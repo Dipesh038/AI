@@ -256,7 +256,7 @@ const Home = () => {
             </div>
 
             <div className="grid grid-cols-1 gap-6">
-                <div className="bg-[#1e1e2e] p-6 rounded-2xl shadow-lg border border-gray-700/30 relative">
+                <div className="bg-[#1e1e2e] p-6 rounded-2xl shadow-lg border border-gray-700/30 relative magic-bento">
                     <div className="flex justify-between items-start mb-6">
                         <h2 className="text-xl font-semibold text-gray-100">
                             {selectedCountry ? `${selectedCountry} - Tool Popularity` : 'Select a Country'}

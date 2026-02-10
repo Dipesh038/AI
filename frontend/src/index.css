@@ -3,7 +3,8 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #030712; /* Deep dark background */
+  background-color: #030712;
+  /* Deep dark background */
   color: #f3f4f6;
   min-height: 100vh;
   overflow-x: hidden;
@@ -54,6 +55,71 @@ body {
   z-index: -1;
   overflow: hidden;
   background: radial-gradient(circle at 15% 50%, rgba(76, 29, 149, 0.15), transparent 25%),
-              radial-gradient(circle at 85% 30%, rgba(37, 99, 235, 0.15), transparent 25%);
+    radial-gradient(circle at 85% 30%, rgba(37, 99, 235, 0.15), transparent 25%);
   pointer-events: none;
+}
+
+/* Magic Bento Glow Effect */
+.magic-bento {
+  position: relative;
+  isolation: isolate;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  /* Subtle inner border/stroke base */
+  box-shadow:
+    0 10px 40px -10px rgba(0, 0, 0, 0.5),
+    /* Deep shadow for lift */
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+  /* Top highlight */
+  transition: all 0.3s ease-out;
+}
+
+/* Outer Glow Ring */
+.magic-bento::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  /* Slight bleed */
+  border-radius: inherit;
+  padding: 2px;
+  /* Border width for gradient */
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.4), rgba(59, 130, 246, 0.4), rgba(139, 92, 246, 0.1));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.6;
+  /* Default visibility */
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  /* Sits on top of border */
+}
+
+/* Ambient Glow Depth (Behind) */
+.magic-bento::after {
+  content: "";
+  position: absolute;
+  inset: -15px;
+  /* Large diffused glow */
+  background: radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.15), transparent 60%);
+  filter: blur(20px);
+  z-index: -1;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover State */
+.magic-bento:hover {
+  border-color: rgba(139, 92, 246, 0.4);
+  transform: translateY(-1px);
+}
+
+.magic-bento:hover::before {
+  opacity: 0.8;
+}
+
+.magic-bento:hover::after {
+  opacity: 0.7;
+  filter: blur(25px);
 }
