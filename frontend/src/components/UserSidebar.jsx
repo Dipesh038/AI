@@ -41,10 +41,10 @@ const UserSidebar = () => {
                 {!isCollapsed && (
                     <div className="flex items-center space-x-3">
                         <div className="w-7 h-7 rounded-md bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg shadow-blue-500/20">
-                            <span className="text-white font-bold text-sm">A</span>
+                            <img src="/favicon.png" alt="AI Logo" className="w-5 h-5" />
                         </div>
                         <span className="text-base font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 leading-none">
-                            AI Dashboard
+                            AI
                         </span>
                     </div>
                 )}
