@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import axios from 'axios';
 import api from '../services/api';
 import CountrySelector from '../components/CountrySelector';
 import Graph from '../components/Graph';
+import { DashboardSkeleton } from '../components/SkeletonLoader';
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#64748b'];
@@ -10,7 +12,6 @@ const Home = () => {
     const [countries, setCountries] = useState([]);
     const [selectedCountry, setSelectedCountry] = useState('India');
     const [countryData, setCountryData] = useState(null);
-    // const [tools, setTools] = useState([]); // Removed high-memory state
     const [loading, setLoading] = useState(true);
     const [selectedYear, setSelectedYear] = useState(2024);
     const [trendingYear, setTrendingYear] = useState(2024);
@@ -20,105 +21,202 @@ const Home = () => {
     const [growthData, setGrowthData] = useState([]);
     const [pieData, setPieData] = useState([]);
 
+    // AbortController refs for request cancellation
+    const popularityAbortRef = useRef(null);
+    const countryAbortRef = useRef(null);
+    const growthAbortRef = useRef(null);
+    const pieAbortRef = useRef(null);
+
+    // Debounce refs
+    const countryDebounceRef = useRef(null);
+    const yearDebounceRef = useRef(null);
+    const trendingDebounceRef = useRef(null);
+    const pieDebounceRef = useRef(null);
+
+    // --- Initial load: fetch countries + default data in parallel ---
     useEffect(() => {
-        const fetchData = async () => {
+        const fetchInitialData = async () => {
             try {
-                const countriesRes = await api.get('/countries');
+                const [countriesRes, popularityRes, growthRes, categoriesRes, countryDetailRes] = await Promise.all([
+                    api.get('/countries'),
+                    api.get('/analytics/popularity?country=India&year=2024&limit=10'),
+                    api.get('/analytics/growth?year=2024&limit=5'),
+                    api.get('/analytics/categories?year=2025'),
+                    api.get('/countries/India')
+                ]);
+
                 setCountries(countriesRes.data);
+                setPopularityData(popularityRes.data.map(item => ({
+                    name: item.toolName,
+                    usage: item.popularity
+                })));
+                setGrowthData(growthRes.data);
+                setCountryData(countryDetailRes.data);
+
+                // Process pie data
+                const top5 = categoriesRes.data.slice(0, 5);
+                const othersCount = categoriesRes.data.slice(5).reduce((acc, item) => acc + item.value, 0);
+                const finalData = [...top5];
+                if (othersCount > 0) finalData.push({ name: 'Others', value: othersCount });
+                setPieData(finalData);
             } catch (error) {
-                console.error('Error fetching data:', error);
+                if (!axios.isCancel(error)) {
+                    console.error('Error fetching initial data:', error);
+                }
             } finally {
                 setLoading(false);
             }
         };
 
-        fetchData();
+        fetchInitialData();
     }, []);
 
-    // Fetch Popularity Data
+    // --- Debounced Popularity fetch (on country/year change, skip first render) ---
+    const isInitialRender = useRef(true);
+
     useEffect(() => {
-        const fetchPopularity = async () => {
-            if (selectedCountry && selectedYear) {
-                try {
-                    const res = await api.get(`/analytics/popularity?country=${selectedCountry}&year=${selectedYear}&limit=10`);
-                    const formattedData = res.data.map(item => ({
-                        name: item.toolName,
-                        usage: item.popularity
-                    }));
-                    setPopularityData(formattedData);
-                } catch (error) {
+        if (isInitialRender.current) {
+            isInitialRender.current = false;
+            return;
+        }
+
+        // Cancel previous request
+        if (popularityAbortRef.current) popularityAbortRef.current.abort();
+        if (countryAbortRef.current) countryAbortRef.current.abort();
+
+        // Debounce 300ms
+        clearTimeout(countryDebounceRef.current);
+        countryDebounceRef.current = setTimeout(async () => {
+            if (!selectedCountry || !selectedYear) return;
+
+            const popController = new AbortController();
+            const countryController = new AbortController();
+            popularityAbortRef.current = popController;
+            countryAbortRef.current = countryController;
+
+            try {
+                const [popRes, countryRes] = await Promise.all([
+                    api.get(`/analytics/popularity?country=${selectedCountry}&year=${selectedYear}&limit=10`, {
+                        signal: popController.signal
+                    }),
+                    api.get(`/countries/${selectedCountry}`, {
+                        signal: countryController.signal
+                    })
+                ]);
+
+                setPopularityData(popRes.data.map(item => ({
+                    name: item.toolName,
+                    usage: item.popularity
+                })));
+                setCountryData(countryRes.data);
+            } catch (error) {
+                if (!axios.isCancel(error)) {
                     console.error('Error fetching popularity:', error);
                     setPopularityData([]);
                 }
             }
-        };
-        fetchPopularity();
+        }, 300);
+
+        return () => clearTimeout(countryDebounceRef.current);
     }, [selectedCountry, selectedYear]);
 
-    // Fetch Growth Data
+    // --- Debounced Growth fetch ---
+    const isInitialGrowth = useRef(true);
+
     useEffect(() => {
-        const fetchGrowth = async () => {
+        if (isInitialGrowth.current) {
+            isInitialGrowth.current = false;
+            return;
+        }
+
+        if (growthAbortRef.current) growthAbortRef.current.abort();
+
+        clearTimeout(trendingDebounceRef.current);
+        trendingDebounceRef.current = setTimeout(async () => {
+            const controller = new AbortController();
+            growthAbortRef.current = controller;
+
             try {
-                const res = await api.get(`/analytics/growth?year=${trendingYear}&limit=5`);
+                const res = await api.get(`/analytics/growth?year=${trendingYear}&limit=5`, {
+                    signal: controller.signal
+                });
                 setGrowthData(res.data);
             } catch (error) {
-                console.error('Error fetching growth data:', error);
-                setGrowthData([]);
+                if (!axios.isCancel(error)) {
+                    console.error('Error fetching growth data:', error);
+                    setGrowthData([]);
+                }
             }
-        };
-        fetchGrowth();
+        }, 300);
+
+        return () => clearTimeout(trendingDebounceRef.current);
     }, [trendingYear]);
 
-    useEffect(() => {
-        if (selectedCountry) {
-            const fetchCountryData = async () => {
-                try {
-                    const res = await api.get(`/countries/${selectedCountry}`);
-                    setCountryData(res.data);
-                } catch (error) {
-                    console.error('Error fetching country data:', error);
-                    setCountryData(null);
-                }
-            };
-            fetchCountryData();
-        } else {
-            setCountryData(null);
-        }
-    }, [selectedCountry]);
+    // --- Debounced Pie chart fetch ---
+    const isInitialPie = useRef(true);
 
-    // Fetch Category Distribution
     useEffect(() => {
-        const fetchCategories = async () => {
+        if (isInitialPie.current) {
+            isInitialPie.current = false;
+            return;
+        }
+
+        if (pieAbortRef.current) pieAbortRef.current.abort();
+
+        clearTimeout(pieDebounceRef.current);
+        pieDebounceRef.current = setTimeout(async () => {
+            const controller = new AbortController();
+            pieAbortRef.current = controller;
+
             try {
-                const res = await api.get(`/analytics/categories?year=${pieYear}`);
-                // API returns { name, value } derived from count
-                // Backend already sorts by count desc
+                const res = await api.get(`/analytics/categories?year=${pieYear}`, {
+                    signal: controller.signal
+                });
                 const top5 = res.data.slice(0, 5);
                 const othersCount = res.data.slice(5).reduce((acc, item) => acc + item.value, 0);
-
                 const finalData = [...top5];
-                if (othersCount > 0) {
-                    finalData.push({ name: 'Others', value: othersCount });
-                }
+                if (othersCount > 0) finalData.push({ name: 'Others', value: othersCount });
                 setPieData(finalData);
             } catch (error) {
-                console.error('Error fetching category stats:', error);
-                setPieData([]);
+                if (!axios.isCancel(error)) {
+                    console.error('Error fetching category stats:', error);
+                    setPieData([]);
+                }
             }
-        };
-        fetchCategories();
+        }, 300);
+
+        return () => clearTimeout(pieDebounceRef.current);
     }, [pieYear]);
 
-    if (loading) return <div className="p-10 text-white">Loading...</div>;
+    // --- Memoized values ---
+    const displayData = useMemo(() => popularityData, [popularityData]);
 
-    const displayData = popularityData;
+    const totalToolsInYear = useMemo(
+        () => pieData.reduce((acc, entry) => acc + entry.value, 0),
+        [pieData]
+    );
 
-    // Calculate Category Distribution (Top 5 + Others)
+    const trendingTools = useMemo(() => growthData, [growthData]);
 
+    // --- Memoized callbacks ---
+    const handleCountrySelect = useCallback((country) => {
+        setSelectedCountry(country);
+    }, []);
 
-    const totalToolsInYear = pieData.reduce((acc, entry) => acc + entry.value, 0);
+    const handleYearChange = useCallback((e) => {
+        setSelectedYear(parseInt(e.target.value));
+    }, []);
 
-    const trendingTools = growthData;
+    const handleTrendingYearChange = useCallback((e) => {
+        setTrendingYear(parseInt(e.target.value));
+    }, []);
+
+    const handlePieYearChange = useCallback((e) => {
+        setPieYear(parseInt(e.target.value));
+    }, []);
+
+    // --- Loading skeleton ---
+    if (loading) return <DashboardSkeleton />;
 
     return (
         <div className="space-y-6">
@@ -153,7 +251,7 @@ const Home = () => {
                 <CountrySelector
                     countries={countries}
                     selectedCountry={selectedCountry}
-                    onSelect={setSelectedCountry}
+                    onSelect={handleCountrySelect}
                 />
             </div>
 
@@ -168,7 +266,7 @@ const Home = () => {
                         <div className="relative">
                             <select
                                 value={selectedYear}
-                                onChange={(e) => setSelectedYear(parseInt(e.target.value))}
+                                onChange={handleYearChange}
                                 className="appearance-none bg-slate-800 border border-slate-700 text-white py-2 pl-4 pr-10 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm font-medium cursor-pointer"
                             >
                                 <option value={2024}>2024</option>
@@ -204,7 +302,7 @@ const Home = () => {
                             <div className="relative ml-4">
                                 <select
                                     value={pieYear}
-                                    onChange={(e) => setPieYear(parseInt(e.target.value))}
+                                    onChange={handlePieYearChange}
                                     className="appearance-none bg-slate-800 border border-slate-700 text-white py-2 pl-4 pr-10 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm font-medium cursor-pointer"
                                 >
                                     {[2022, 2023, 2024, 2025].map(year => (
@@ -287,7 +385,7 @@ const Home = () => {
                             <div className="relative">
                                 <select
                                     value={trendingYear}
-                                    onChange={(e) => setTrendingYear(parseInt(e.target.value))}
+                                    onChange={handleTrendingYearChange}
                                     className="appearance-none bg-slate-800 border border-slate-700 text-white py-2 pl-4 pr-10 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm font-medium cursor-pointer"
                                 >
                                     <option value={2024}>2024</option>

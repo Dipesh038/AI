@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, List, ChevronLeft, ChevronRight } from 'lucide-react';
+import { LayoutDashboard, List, ChevronLeft, ChevronRight, Settings } from 'lucide-react';
 
 const UserSidebar = () => {
     const location = useLocation();
@@ -13,22 +13,17 @@ const UserSidebar = () => {
                 if (window.innerWidth < 768) {
                     setIsCollapsed(true);
                 } else if (window.innerWidth >= 1024) {
-                    // Allow re-expansion on larger screens
                     setIsCollapsed(false);
                 }
             }
         };
 
-        // Initial check
         handleResize();
-
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const isActive = (path) => {
-        return location.pathname === path;
-    };
+    const isActive = (path) => location.pathname === path;
 
     const navItems = [
         { path: '/', icon: LayoutDashboard, label: 'Dashboard' },
@@ -37,29 +32,33 @@ const UserSidebar = () => {
 
     return (
         <div
-            className={`bg-slate-950 text-gray-100 min-h-screen flex flex-col border-r border-slate-800 transition-all duration-300 ease-in-out overflow-hidden ${isCollapsed ? 'w-20' : 'w-64'
-                }`}
+            className={`sticky top-0 h-screen flex flex-col transition-all duration-300 ease-in-out z-50 
+            bg-[#0B0F19]/80 backdrop-blur-xl border-r border-white/5 
+            ${isCollapsed ? 'w-20' : 'w-64'}`}
         >
-            {/* Header with Logo and Toggle */}
-            <div className={`p-5 border-b border-slate-800 bg-slate-950 flex items-center flex-shrink-0 ${isCollapsed ? 'justify-center' : 'justify-between'
-                }`}>
+            {/* Header */}
+            <div className={`h-16 flex items-center flex-shrink-0 px-5 border-b border-white/5 ${isCollapsed ? 'justify-center' : 'justify-between'}`}>
                 {!isCollapsed && (
-                    <div className="text-xl font-bold whitespace-nowrap">
-                        AI Dashboard
+                    <div className="flex items-center space-x-3">
+                        <div className="w-7 h-7 rounded-md bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg shadow-blue-500/20">
+                            <span className="text-white font-bold text-sm">A</span>
+                        </div>
+                        <span className="text-base font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 leading-none">
+                            AI Dashboard
+                        </span>
                     </div>
                 )}
+
                 <button
                     onClick={() => setIsCollapsed(!isCollapsed)}
-                    className="p-2 rounded-lg hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500/50"
-                    aria-label={isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
-                    aria-expanded={!isCollapsed}
+                    className="p-1.5 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-colors"
                 >
-                    {isCollapsed ? <ChevronRight size={20} /> : <ChevronLeft size={20} />}
+                    {isCollapsed ? <ChevronRight size={18} /> : <ChevronLeft size={18} />}
                 </button>
             </div>
 
             {/* Navigation */}
-            <nav className="flex-1 p-4 space-y-2 overflow-y-auto">
+            <nav className="flex-1 p-3 space-y-1 overflow-y-auto custom-scrollbar">
                 {navItems.map((item) => {
                     const Icon = item.icon;
                     const active = isActive(item.path);
@@ -68,33 +67,27 @@ const UserSidebar = () => {
                         <Link
                             key={item.path}
                             to={item.path}
-                            className={`group relative flex items-center ${isCollapsed ? 'justify-center' : 'space-x-3'
-                                } p-3 rounded-lg transition-all duration-200 hover:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/50 ${active
-                                    ? 'bg-blue-600/10 text-blue-400 border border-blue-600/20'
-                                    : 'text-gray-400 hover:text-white'
+                            className={`group relative flex items-center ${isCollapsed ? 'justify-center' : 'px-3'} py-2 rounded-lg transition-all duration-300
+                            ${active
+                                    ? 'bg-gradient-to-r from-blue-600/20 to-purple-600/20 text-white border border-blue-500/20 shadow-[0_0_15px_-3px_rgba(59,130,246,0.3)]'
+                                    : 'text-gray-400 hover:text-white hover:bg-white/5'
                                 }`}
-                            aria-label={item.label}
-                            title={isCollapsed ? item.label : undefined}
                         >
-                            <Icon size={20} className="flex-shrink-0" />
-                            <span
-                                className={`whitespace-nowrap transition-all duration-300 ${isCollapsed
-                                    ? 'opacity-0 pointer-events-none w-0 overflow-hidden'
-                                    : 'opacity-100'
-                                    }`}
-                            >
-                                {item.label}
-                            </span>
+                            <Icon
+                                size={20}
+                                className={`flex-shrink-0 transition-colors duration-300 ${active ? 'text-blue-400' : 'text-gray-500 group-hover:text-gray-300'}`}
+                            />
+
+                            {!isCollapsed && (
+                                <span className={`ml-3 text-sm font-medium transition-opacity duration-300 ${active ? 'text-white' : 'text-gray-400 group-hover:text-gray-200'}`}>
+                                    {item.label}
+                                </span>
+                            )}
 
                             {/* Tooltip for collapsed mode */}
                             {isCollapsed && (
-                                <div
-                                    className="absolute left-full ml-2 px-3 py-2 bg-slate-800 text-white text-sm rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible transition-all duration-200 whitespace-nowrap z-50 border border-slate-700 shadow-lg pointer-events-none"
-                                    role="tooltip"
-                                    aria-hidden="true"
-                                >
+                                <div className="absolute left-full ml-4 px-3 py-1.5 bg-gray-900 border border-white/10 text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 whitespace-nowrap z-50 shadow-xl">
                                     {item.label}
-                                    <div className="absolute top-1/2 -left-1 -translate-y-1/2 w-2 h-2 bg-slate-800 border-l border-b border-slate-700 rotate-45"></div>
                                 </div>
                             )}
                         </Link>
@@ -103,11 +96,10 @@ const UserSidebar = () => {
             </nav>
 
             {/* Footer */}
-            <div
-                className={`p-4 text-sm text-gray-500 border-t border-slate-800 flex-shrink-0 transition-opacity duration-300 ${isCollapsed ? 'opacity-0 pointer-events-none' : 'opacity-100'
-                    }`}
-            >
-                © 2024 AI Trends
+            <div className={`p-4 border-t border-white/5 flex-shrink-0 ${isCollapsed ? 'hidden' : 'block'}`}>
+                <p className="text-[10px] text-center text-gray-600 uppercase tracking-wider">
+                    © 2026 AI Trends
+                </p>
             </div>
         </div>
     );

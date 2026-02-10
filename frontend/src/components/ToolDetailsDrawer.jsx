@@ -104,13 +104,13 @@ const ToolDetailsDrawer = ({ tool, isOpen, onClose, tools = [], onToolSelect }) 
             <div
                 ref={drawerRef}
                 className={`
-                    relative w-full max-w-lg h-full bg-slate-900 border-l border-slate-800 shadow-2xl 
+                    relative w-full max-w-lg h-full bg-[#0B0F19]/95 backdrop-blur-2xl border-l border-white/10 shadow-2xl 
                     transform transition-transform duration-300 ease-out flex flex-col
                     ${isOpen ? 'translate-x-0' : 'translate-x-full'}
                 `}
             >
                 {/* Close Button & Header */}
-                <div className="flex items-center justify-between p-6 border-b border-slate-800/50">
+                <div className="flex items-center justify-between p-6 border-b border-white/5">
                     <div className="relative">
                         <button
                             onClick={() => setIsSwitcherOpen(!isSwitcherOpen)}
@@ -122,8 +122,8 @@ const ToolDetailsDrawer = ({ tool, isOpen, onClose, tools = [], onToolSelect }) 
 
                         {/* Dropdown Menu */}
                         {isSwitcherOpen && (
-                            <div className="absolute top-full left-0 mt-2 w-72 max-h-80 overflow-y-auto bg-slate-800 border border-slate-700 rounded-xl shadow-xl z-20 custom-scrollbar flex flex-col">
-                                <div className="p-2 sticky top-0 bg-slate-800 border-b border-slate-700/50 z-10">
+                            <div className="absolute top-full left-0 mt-2 w-72 max-h-80 overflow-y-auto bg-[#13131f] border border-white/10 rounded-xl shadow-xl z-20 custom-scrollbar flex flex-col">
+                                <div className="p-2 sticky top-0 bg-[#13131f] border-b border-white/5 z-10">
                                     <div className="relative">
                                         <Search size={16} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-500" />
                                         <input
@@ -133,7 +133,7 @@ const ToolDetailsDrawer = ({ tool, isOpen, onClose, tools = [], onToolSelect }) 
                                             value={searchTerm}
                                             onChange={(e) => setSearchTerm(e.target.value)}
                                             onClick={(e) => e.stopPropagation()}
-                                            className="w-full bg-slate-900 text-white pl-9 pr-4 py-2 rounded-lg border border-slate-700 focus:outline-none focus:border-blue-500 text-sm"
+                                            className="w-full bg-[#0B0F19] text-white pl-9 pr-4 py-2 rounded-lg border border-white/10 focus:outline-none focus:border-blue-500 text-sm"
                                         />
                                     </div>
                                 </div>

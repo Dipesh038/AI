@@ -19,4 +19,38 @@ api.interceptors.request.use(
     (error) => Promise.reject(error)
 );
 
+// Response interceptor: gracefully handle cancelled requests
+api.interceptors.response.use(
+    (response) => response,
+    (error) => {
+        if (axios.isCancel(error)) {
+            // Silently swallow cancelled requests — they're intentional
+            return Promise.reject(error);
+        }
+        return Promise.reject(error);
+    }
+);
+
+// Request deduplication map (prevents identical concurrent requests)
+const pendingRequests = new Map();
+
+/**
+ * Deduplicated GET request. If an identical GET is already in flight,
+ * return the same promise instead of firing a duplicate request.
+ */
+export const deduplicatedGet = (url, config = {}) => {
+    const key = `${url}${JSON.stringify(config.params || {})}`;
+
+    if (pendingRequests.has(key)) {
+        return pendingRequests.get(key);
+    }
+
+    const request = api.get(url, config).finally(() => {
+        pendingRequests.delete(key);
+    });
+
+    pendingRequests.set(key, request);
+    return request;
+};
+
 export default api;

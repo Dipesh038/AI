@@ -71,7 +71,7 @@ router.get('/popularity/countries', protect, async (req, res) => {
 
 // @desc    Get Tool Popularity Data
 // @route   GET /api/analytics/popularity
-// @access  Public (or semi-private depending on needs, but usually public for dashboard)
+// @access  Public
 router.get('/popularity', async (req, res) => {
     try {
         const { country, year, limit, page } = req.query;
@@ -93,7 +93,8 @@ router.get('/popularity', async (req, res) => {
             .sort({ popularity: -1 })
             .skip(skip)
             .limit(limitVal)
-            .select('toolName popularity country year');
+            .select('toolName popularity country year')
+            .lean();
 
         analyticsCache.set(cacheKey, data);
         res.json(data);
@@ -129,6 +130,8 @@ router.post('/popularity', protect, async (req, res) => {
             { new: true, upsert: true, runValidators: true }
         );
 
+        // Invalidate cache after write
+        analyticsCache.flushAll();
         res.json(record);
     } catch (err) {
         res.status(500).json({ message: err.message });
@@ -143,6 +146,7 @@ router.delete('/popularity/:id', protect, async (req, res) => {
         const record = await CountryToolPopularity.findById(req.params.id);
         if (record) {
             await record.deleteOne();
+            analyticsCache.flushAll();
             res.json({ message: 'Record removed' });
         } else {
             res.status(404).json({ message: 'Record not found' });
@@ -172,7 +176,8 @@ router.get('/growth', async (req, res) => {
         const data = await ToolGrowthStats.find(query)
             .sort({ growthPercent: -1 })
             .limit(limitVal)
-            .select('toolName category year growthPercent rank');
+            .select('toolName category year growthPercent rank')
+            .lean();
 
         analyticsCache.set(cacheKey, data);
         res.json(data);
@@ -209,6 +214,8 @@ router.post('/growth', protect, async (req, res) => {
             { new: true, upsert: true, runValidators: true }
         );
 
+        // Invalidate cache after write
+        analyticsCache.flushAll();
         res.json(record);
     } catch (err) {
         res.status(500).json({ message: err.message });
@@ -223,6 +230,7 @@ router.delete('/growth/:id', protect, async (req, res) => {
         const record = await ToolGrowthStats.findById(req.params.id);
         if (record) {
             await record.deleteOne();
+            analyticsCache.flushAll();
             res.json({ message: 'Record removed' });
         } else {
             res.status(404).json({ message: 'Record not found' });

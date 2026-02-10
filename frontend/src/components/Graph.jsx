@@ -128,4 +128,4 @@ const Graph = ({ data }) => {
     );
 };
 
-export default Graph;
+export default React.memo(Graph);

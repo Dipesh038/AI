@@ -51,9 +51,11 @@ router.post('/login', [
 // @access  Private/Admin
 router.get('/stats', protect, async (req, res) => {
     try {
-        const toolsCount = await AITool.countDocuments();
-        const categoriesCount = await Category.countDocuments();
-        const countriesCount = await CountryUsage.countDocuments();
+        const [toolsCount, categoriesCount, countriesCount] = await Promise.all([
+            AITool.countDocuments(),
+            Category.countDocuments(),
+            CountryUsage.countDocuments()
+        ]);
 
         res.json({
             toolsCount,
@@ -70,7 +72,7 @@ router.get('/stats', protect, async (req, res) => {
 // @access  Private/Admin
 router.get('/tools', protect, async (req, res) => {
     try {
-        const tools = await AITool.find().sort({ createdAt: -1 });
+        const tools = await AITool.find().sort({ createdAt: -1 }).lean();
         res.json(tools);
     } catch (err) {
         res.status(500).json({ message: err.message });
@@ -156,7 +158,7 @@ router.delete('/delete-tool/:id', protect, async (req, res) => {
 // @access  Private/Admin
 router.get('/categories', protect, async (req, res) => {
     try {
-        const categories = await Category.find().sort({ name: 1 });
+        const categories = await Category.find().sort({ name: 1 }).lean();
         res.json(categories);
     } catch (err) {
         res.status(500).json({ message: err.message });
@@ -230,7 +232,7 @@ router.delete('/delete-category/:id', protect, async (req, res) => {
 // @access  Private/Admin
 router.get('/countries', protect, async (req, res) => {
     try {
-        const countries = await CountryUsage.find().sort({ country: 1 });
+        const countries = await CountryUsage.find().sort({ country: 1 }).lean();
         res.json(countries);
     } catch (err) {
         res.status(500).json({ message: err.message });

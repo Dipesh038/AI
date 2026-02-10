@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const AITool = require('../models/AITool');
+const NodeCache = require('node-cache');
+const toolsCache = new NodeCache({ stdTTL: 600 }); // 10 min TTL
 
 // @desc    Get all AI tools
 // @route   GET /api/tools
@@ -23,12 +25,16 @@ router.get('/', async (req, res) => {
             query.category = category;
         }
 
-        const total = await AITool.countDocuments(query);
-        const tools = await AITool.find(query)
-            .sort({ name: 1 })
-            .skip(skip)
-            .limit(limit)
-            .select('name category description website growth launchDate'); // Optimize fields
+        // Parallel execution of count + find
+        const [total, tools] = await Promise.all([
+            AITool.countDocuments(query),
+            AITool.find(query)
+                .sort({ name: 1 })
+                .skip(skip)
+                .limit(limit)
+                .select('name category description website growth launchDate')
+                .lean()
+        ]);
 
         res.json({
             tools,
@@ -46,8 +52,15 @@ router.get('/', async (req, res) => {
 // @access  Public
 router.get('/categories', async (req, res) => {
     try {
+        const cacheKey = 'tool_categories';
+        const cached = toolsCache.get(cacheKey);
+        if (cached) return res.json(cached);
+
         const categories = await AITool.distinct('category');
-        res.json(categories.sort());
+        const sorted = categories.sort();
+
+        toolsCache.set(cacheKey, sorted);
+        res.json(sorted);
     } catch (err) {
         res.status(500).json({ message: err.message });
     }

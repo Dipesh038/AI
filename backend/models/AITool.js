@@ -6,6 +6,16 @@ const aiToolSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
+    image: {
+        url: { type: String },
+        source: {
+            type: String,
+            enum: ['official', 'opengraph', 'category', 'placeholder', 'manual'],
+            default: 'placeholder'
+        },
+        fallbackColor: { type: String }, // Hex code for placeholder
+        lastVerified: { type: Date }
+    },
     description: {
         type: String,
         required: true
@@ -33,7 +43,10 @@ const aiToolSchema = new mongoose.Schema({
     }
 });
 
-// Index for category filtering
+// Performance indexes
 aiToolSchema.index({ category: 1 });
+aiToolSchema.index({ launchDate: 1, category: 1 }); // Analytics category aggregation
+aiToolSchema.index({ isPublished: 1 });              // Published tool filtering
+aiToolSchema.index({ name: 1 });                     // Catalog search/sort
 
 module.exports = mongoose.model('AITool', aiToolSchema);
