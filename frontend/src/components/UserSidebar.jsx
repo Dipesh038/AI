@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, List, ChevronLeft, ChevronRight, Settings } from 'lucide-react';
+import { LayoutDashboard, List, ChevronLeft, ChevronRight, BriefcaseBusiness } from 'lucide-react';
 
 const UserSidebar = () => {
     const location = useLocation();
-    const [isCollapsed, setIsCollapsed] = useState(false);
+    const [isCollapsed, setIsCollapsed] = useState(() => {
+        if (typeof window === 'undefined') return false;
+        return window.innerWidth < 768;
+    });
 
     // Responsive behavior: auto-collapse on mobile, allow re-expansion on desktop
     useEffect(() => {
@@ -18,7 +21,6 @@ const UserSidebar = () => {
             }
         };
 
-        handleResize();
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
@@ -27,12 +29,13 @@ const UserSidebar = () => {
 
     const navItems = [
         { path: '/', icon: LayoutDashboard, label: 'Dashboard' },
-        { path: '/ai-tools', icon: List, label: 'AI Tools Catalog' },
+        { path: '/ai-tools', icon: List, label: 'AI Tools' },
+        { path: '/ai-jobs', icon: BriefcaseBusiness, label: 'AI Jobs' },
     ];
 
     return (
         <div
-            className={`sticky top-0 h-screen flex flex-col transition-all duration-300 ease-in-out z-50 
+            className={`sticky top-0 h-screen flex flex-col transition-[width] duration-300 ease-in-out z-50 
             bg-[#0B0F19]/80 backdrop-blur-xl border-r border-white/5 
             ${isCollapsed ? 'w-20' : 'w-64'}`}
         >
@@ -51,6 +54,7 @@ const UserSidebar = () => {
 
                 <button
                     onClick={() => setIsCollapsed(!isCollapsed)}
+                    aria-label={isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
                     className="p-1.5 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-colors"
                 >
                     {isCollapsed ? <ChevronRight size={18} /> : <ChevronLeft size={18} />}
@@ -58,7 +62,7 @@ const UserSidebar = () => {
             </div>
 
             {/* Navigation */}
-            <nav className="flex-1 p-3 space-y-1 overflow-y-auto custom-scrollbar">
+            <nav aria-label="Main navigation" className="flex-1 p-3 space-y-1 overflow-y-auto custom-scrollbar">
                 {navItems.map((item) => {
                     const Icon = item.icon;
                     const active = isActive(item.path);
@@ -67,19 +71,21 @@ const UserSidebar = () => {
                         <Link
                             key={item.path}
                             to={item.path}
-                            className={`group relative flex items-center ${isCollapsed ? 'justify-center' : 'px-3'} py-2 rounded-lg transition-all duration-300
+                            aria-label={item.label}
+                            aria-current={active ? 'page' : undefined}
+                            className={`group relative flex items-center ${isCollapsed ? 'justify-center' : 'px-3'} py-2 rounded-lg transition-colors duration-300
                             ${active
-                                    ? 'bg-gradient-to-r from-blue-600/20 to-purple-600/20 text-white border border-blue-500/20 shadow-[0_0_15px_-3px_rgba(59,130,246,0.3)]'
+                                    ? 'bg-gradient-to-r from-cyan-500/10 to-purple-600/10 text-cyan-400 border border-cyan-500/20 shadow-[0_0_15px_-3px_rgba(34,211,238,0.2)]'
                                     : 'text-gray-400 hover:text-white hover:bg-white/5'
                                 }`}
                         >
                             <Icon
                                 size={20}
-                                className={`flex-shrink-0 transition-colors duration-300 ${active ? 'text-blue-400' : 'text-gray-500 group-hover:text-gray-300'}`}
+                                className={`flex-shrink-0 transition-colors duration-300 ${active ? 'text-cyan-400' : 'text-gray-500 group-hover:text-gray-300'}`}
                             />
 
                             {!isCollapsed && (
-                                <span className={`ml-3 text-sm font-medium transition-opacity duration-300 ${active ? 'text-white' : 'text-gray-400 group-hover:text-gray-200'}`}>
+                                <span className={`ml-3 text-sm font-medium transition-opacity duration-300 ${active ? 'text-cyan-50' : 'text-gray-400 group-hover:text-gray-200'}`}>
                                     {item.label}
                                 </span>
                             )}

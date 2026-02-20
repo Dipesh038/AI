@@ -25,6 +25,7 @@ app.use('/api/countries', require('./routes/countries'));
 app.use('/api/tools', require('./routes/tools'));
 app.use('/api/admin', require('./routes/admin'));
 app.use('/api/analytics', require('./routes/analytics'));
+app.use('/api/jobs', require('./routes/jobs'));
 
 // Health-check endpoint (for keep-alive / monitoring)
 app.get('/api/health', (req, res) => {

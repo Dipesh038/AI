@@ -6,12 +6,36 @@
   <link rel="icon" type="image/png" href="/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebAI - AI Analytics Dashboard</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Track AI tool popularity by country, explore trending tools, and discover emerging AI software with real-time analytics." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.webai.codes/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.webai.codes/" />
+  <meta property="og:title" content="WebAI — Global AI Tool Popularity & Trends Dashboard" />
+  <meta property="og:description" content="Track AI tool popularity by country, explore trending tools, and discover emerging AI software with real-time analytics." />
+  <meta property="og:image" content="https://www.webai.codes/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WebAI — Global AI Tool Popularity & Trends Dashboard" />
+  <meta name="twitter:description" content="Track AI tool popularity by country, explore trending tools, and discover emerging AI software." />
+  <meta name="twitter:image" content="https://www.webai.codes/og-image.png" />
+
+  <meta name="theme-color" content="#0B0F19" />
+
+  <!-- Fonts: preconnect then non-blocking load -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
 </head>
 
 <body>
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-lg">Skip to main content</a>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>

@@ -4,7 +4,7 @@ import api from '../services/api';
 import ToolList from '../components/ToolList';
 import ToolDetailsDrawer from '../components/ToolDetailsDrawer';
 import { CatalogSkeleton } from '../components/SkeletonLoader';
-import { Search, Filter, Command } from 'lucide-react';
+import { Search, Filter, Command, TrendingUp, SortAsc, ArrowUpRight } from 'lucide-react';
 
 const Catalog = () => {
     const [tools, setTools] = useState([]);
@@ -15,6 +15,10 @@ const Catalog = () => {
     const [categories, setCategories] = useState(['All']);
     const [selectedTool, setSelectedTool] = useState(null);
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+    const [sortBy, setSortBy] = useState('name'); // name | growth | newest
+
+    // Trending strip
+    const [trendingTools, setTrendingTools] = useState([]);
 
     // Pagination State
     const [page, setPage] = useState(1);
@@ -42,6 +46,19 @@ const Catalog = () => {
         fetchCategories();
     }, []);
 
+    // Fetch Trending Tools (once on mount)
+    useEffect(() => {
+        const fetchTrending = async () => {
+            try {
+                const res = await api.get('/tools/trending');
+                setTrendingTools(res.data);
+            } catch (error) {
+                console.error('Error fetching trending tools:', error);
+            }
+        };
+        fetchTrending();
+    }, []);
+
     // Fetch Tools with AbortController
     useEffect(() => {
         // Cancel previous request
@@ -57,7 +74,8 @@ const Catalog = () => {
                     page,
                     limit: 12,
                     search: debouncedSearch,
-                    category: selectedCategory !== 'All' ? selectedCategory : undefined
+                    category: selectedCategory !== 'All' ? selectedCategory : undefined,
+                    sort: sortBy
                 };
 
                 const res = await api.get('/tools', { params, signal: controller.signal });
@@ -79,12 +97,12 @@ const Catalog = () => {
         fetchTools();
 
         return () => controller.abort();
-    }, [page, debouncedSearch, selectedCategory]);
+    }, [page, debouncedSearch, selectedCategory, sortBy]);
 
-    // Reset page on filter change
+    // Reset page on filter/sort change
     useEffect(() => {
         setPage(1);
-    }, [debouncedSearch, selectedCategory]);
+    }, [debouncedSearch, selectedCategory, sortBy]);
 
     const handleToolSelect = useCallback((tool) => {
         setSelectedTool(tool);
@@ -100,10 +118,36 @@ const Catalog = () => {
             {/* Header Section */}
             <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-8">
                 <div>
-                    <h1 className="text-3xl font-bold text-white mb-2 tracking-tight">AI Tools Catalog</h1>
+                    <h1 className="text-3xl font-bold text-white mb-2 tracking-tight">AI Tools</h1>
                     <p className="text-gray-400 text-base">Browse the complete collection of AI tools tracked by our platform.</p>
                 </div>
             </div>
+
+            {/* Trending Strip */}
+            {trendingTools.length > 0 && (
+                <div className="mb-2">
+                    <div className="flex items-center gap-2 mb-3">
+                        <TrendingUp size={16} className="text-orange-400" />
+                        <span className="text-sm font-semibold text-orange-400 uppercase tracking-wider">Trending Now</span>
+                    </div>
+                    <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-white/10">
+                        {trendingTools.map(tool => (
+                            <button
+                                key={tool._id}
+                                onClick={() => { setSelectedTool(tool); setIsDrawerOpen(true); }}
+                                className="flex-shrink-0 flex items-center gap-2 px-3 py-2 rounded-xl bg-orange-500/10 border border-orange-500/20 hover:border-orange-500/50 hover:bg-orange-500/20 transition-all duration-200 group"
+                            >
+                                <TrendingUp size={12} className="text-orange-400" />
+                                <span className="text-sm text-white font-medium whitespace-nowrap">{tool.name}</span>
+                                {tool.growth != null && (
+                                    <span className="text-[10px] font-bold text-orange-400">+{tool.growth}%</span>
+                                )}
+                                <ArrowUpRight size={12} className="text-gray-500 group-hover:text-orange-400 transition-colors" />
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            )}
 
             {/* Floating Glass Search & Filter Bar */}
             <div className="sticky top-4 z-40 bg-[#0B0F19]/70 backdrop-blur-xl border border-white/10 p-2 rounded-2xl shadow-2xl flex flex-col md:flex-row gap-3 transition-all duration-300 hover:border-white/20 hover:shadow-blue-900/10 hover:shadow-2xl">
@@ -113,6 +157,8 @@ const Catalog = () => {
                         <Search size={20} />
                     </div>
                     <input
+                        id="tool-search"
+                        aria-label="Search AI tools"
                         type="text"
                         placeholder="Search tools..."
                         value={searchTerm}
@@ -128,12 +174,38 @@ const Catalog = () => {
                 {/* Divider (Desktop) */}
                 <div className="hidden md:block w-px bg-white/10 my-2"></div>
 
+                {/* Sort Dropdown */}
+                <div className="relative min-w-[160px] group">
+                    <div className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500 group-focus-within:text-emerald-400 transition-colors">
+                        <SortAsc size={20} />
+                    </div>
+                    <select
+                        aria-label="Sort tools by"
+                        value={sortBy}
+                        onChange={(e) => setSortBy(e.target.value)}
+                        className="w-full bg-transparent text-white pl-12 pr-10 py-3.5 rounded-xl border border-transparent focus:bg-white/5 focus:border-white/10 focus:outline-none appearance-none cursor-pointer hover:bg-white/5 transition-colors"
+                    >
+                        <option value="name" className="bg-slate-900 text-white">Name A–Z</option>
+                        <option value="growth" className="bg-slate-900 text-white">Top Growth</option>
+                        <option value="newest" className="bg-slate-900 text-white">Newest</option>
+                    </select>
+                    <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-gray-500">
+                        <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </div>
+
+                {/* Divider (Desktop) */}
+                <div className="hidden md:block w-px bg-white/10 my-2"></div>
+
                 {/* Filter Dropdown */}
                 <div className="relative min-w-[200px] group">
                     <div className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500 group-focus-within:text-purple-400 transition-colors">
                         <Filter size={20} />
                     </div>
                     <select
+                        aria-label="Filter by category"
                         value={selectedCategory}
                         onChange={(e) => setSelectedCategory(e.target.value)}
                         className="w-full bg-transparent text-white pl-12 pr-10 py-3.5 rounded-xl border border-transparent focus:bg-white/5 focus:border-white/10 focus:outline-none appearance-none cursor-pointer hover:bg-white/5 transition-colors"
@@ -166,6 +238,7 @@ const Catalog = () => {
                             <button
                                 onClick={() => setPage(p => Math.max(1, p - 1))}
                                 disabled={page === 1}
+                                aria-label="Previous page"
                                 className={`px-6 py-2.5 rounded-xl border transition-all duration-300 font-medium
                                 ${page === 1
                                         ? 'border-white/5 text-gray-600 cursor-not-allowed'
@@ -180,6 +253,7 @@ const Catalog = () => {
                             <button
                                 onClick={() => setPage(p => Math.min(totalPages, p + 1))}
                                 disabled={page === totalPages}
+                                aria-label="Next page"
                                 className={`px-6 py-2.5 rounded-xl border transition-all duration-300 font-medium
                                 ${page === totalPages
                                         ? 'border-white/5 text-gray-600 cursor-not-allowed'

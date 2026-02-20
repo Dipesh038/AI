@@ -1,12 +1,17 @@
 import React from 'react';
-import { ExternalLink, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, TrendingUp } from 'lucide-react';
 import ImageResolver from './ImageResolver';
+
+// A tool is "trending" if its growth field exceeds this threshold (%)
+const TRENDING_THRESHOLD = 50;
 
 const ToolList = ({ tools, onToolSelect, selectedTool }) => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in-up">
-            {tools.map((tool) => {
+            {tools.map((tool, index) => {
                 const isSelected = selectedTool && selectedTool._id === tool._id;
+                const isEager = index < 3;
+                const isTrending = tool.growth != null && tool.growth >= TRENDING_THRESHOLD;
 
                 return (
                     <div
@@ -18,11 +23,19 @@ const ToolList = ({ tools, onToolSelect, selectedTool }) => {
                                 : 'bg-[#13131f]/60 backdrop-blur-md border-white/5 hover:border-blue-500/80 hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] hover:-translate-y-1'
                             }`}
                     >
+                        {/* Trending badge — top-left corner */}
+                        {isTrending && (
+                            <div className="absolute top-3 left-3 z-20 flex items-center gap-1 px-2 py-0.5 rounded-full bg-orange-500/90 backdrop-blur-sm text-white text-[10px] font-semibold shadow-lg">
+                                <TrendingUp size={10} />
+                                <span>Trending</span>
+                            </div>
+                        )}
+
                         {/* 1. Image Section (16:9) */}
                         <div className="w-full h-48 relative z-0">
-                            <ImageResolver tool={tool} className="w-full h-full" />
+                            <ImageResolver tool={tool} className="w-full h-full" eager={isEager} />
 
-                            {/* Overlay Gradient for Text Readability if needed, or just border */}
+                            {/* Overlay Gradient for Text Readability */}
                             <div className="absolute inset-0 bg-gradient-to-t from-[#13131f] to-transparent opacity-60"></div>
                         </div>
 
@@ -42,6 +55,16 @@ const ToolList = ({ tools, onToolSelect, selectedTool }) => {
                             <p className="text-xs text-gray-400 leading-relaxed line-clamp-3 mb-4 flex-1">
                                 {tool.description}
                             </p>
+
+                            {/* Growth indicator (shown when available) */}
+                            {tool.growth != null && (
+                                <div className="flex items-center gap-1 mb-3">
+                                    <TrendingUp size={12} className={tool.growth >= 0 ? 'text-emerald-400' : 'text-red-400'} />
+                                    <span className={`text-xs font-semibold ${tool.growth >= 0 ? 'text-emerald-400' : 'text-red-400'}`}>
+                                        {tool.growth >= 0 ? '+' : ''}{tool.growth}% growth
+                                    </span>
+                                </div>
+                            )}
 
                             {/* Footer / Action */}
                             <div className="flex items-center justify-between mt-auto pt-4 border-t border-white/5">

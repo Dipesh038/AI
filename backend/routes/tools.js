@@ -4,6 +4,28 @@ const AITool = require('../models/AITool');
 const NodeCache = require('node-cache');
 const toolsCache = new NodeCache({ stdTTL: 600 }); // 10 min TTL
 
+// @desc    Get trending AI tools (top by growth %)
+// @route   GET /api/tools/trending
+// @access  Public
+router.get('/trending', async (req, res) => {
+    try {
+        const cacheKey = 'tools_trending';
+        const cached = toolsCache.get(cacheKey);
+        if (cached) return res.json(cached);
+
+        const tools = await AITool.find({ growth: { $gt: 0 }, isPublished: true })
+            .sort({ growth: -1 })
+            .limit(10)
+            .select('name category description website growth image')
+            .lean();
+
+        toolsCache.set(cacheKey, tools);
+        res.json(tools);
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
 // @desc    Get all AI tools
 // @route   GET /api/tools
 // @access  Public
@@ -14,6 +36,7 @@ router.get('/', async (req, res) => {
         const skip = (page - 1) * limit;
         const search = req.query.search || '';
         const category = req.query.category || '';
+        const sort = req.query.sort || 'name'; // name | growth | newest
 
         let query = {};
 
@@ -25,14 +48,20 @@ router.get('/', async (req, res) => {
             query.category = category;
         }
 
+        // Build sort object
+        let sortObj = {};
+        if (sort === 'growth') sortObj = { growth: -1 };
+        else if (sort === 'newest') sortObj = { launchDate: -1 };
+        else sortObj = { name: 1 };
+
         // Parallel execution of count + find
         const [total, tools] = await Promise.all([
             AITool.countDocuments(query),
             AITool.find(query)
-                .sort({ name: 1 })
+                .sort(sortObj)
                 .skip(skip)
                 .limit(limit)
-                .select('name category description website growth launchDate')
+                .select('name category description website growth launchDate image')
                 .lean()
         ]);
 

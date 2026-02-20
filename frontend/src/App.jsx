@@ -16,6 +16,7 @@ const AdminCategories = React.lazy(() => import('./pages/AdminCategories'));
 const AdminCountries = React.lazy(() => import('./pages/AdminCountries'));
 const AdminToolPopularity = React.lazy(() => import('./pages/AdminToolPopularity'));
 const AdminToolGrowth = React.lazy(() => import('./pages/AdminToolGrowth'));
+const JobsMarket2025 = React.lazy(() => import('./pages/JobsMarket2025'));
 
 // Minimal loading fallback
 const PageLoader = () => (
@@ -39,6 +40,8 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Home />} />
             <Route path="/ai-tools" element={<Catalog />} />
+            <Route path="/ai-jobs" element={<JobsMarket2025 />} />
+            <Route path="/ai-jobs-2025" element={<Navigate to="/ai-jobs" replace />} />
             <Route path="/tools/:id" element={<ToolDetails />} />
           </Route>
 

@@ -11,3 +11,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 datasets/raw/
+
+# AI Project Files
+.claude/
+.gemini/
+.opencode/
+.planning/

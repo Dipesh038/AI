@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ImageOff } from 'lucide-react';
 
-const ImageResolver = ({ tool, className = "" }) => {
+const ImageResolver = ({ tool, className = "", eager = false }) => {
     const [imageState, setImageState] = useState('loading'); // loading, loaded, error
 
     // Construct image source
@@ -35,7 +35,8 @@ const ImageResolver = ({ tool, className = "" }) => {
                     className={`w-full h-full object-cover transition-opacity duration-300 ${imageState === 'loaded' ? 'opacity-100' : 'opacity-0'}`}
                     onLoad={handleLoad}
                     onError={handleError}
-                    loading="lazy"
+                    loading={eager ? 'eager' : 'lazy'}
+                    fetchPriority={eager ? 'high' : 'auto'}
                 />
             )}
 

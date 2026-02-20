@@ -30,6 +30,20 @@ const aiToolSchema = new mongoose.Schema({
     website: {
         type: String
     },
+    status: {
+        type: String,
+        enum: ['active', 'partially_working', 'inactive'],
+        default: 'active',
+        index: true
+    },
+    validationDetails: {
+        lastChecked: { type: Date },
+        statusCode: { type: Number },
+        errorMessage: { type: String },
+        loadTimeMs: { type: Number },
+        finalUrl: { type: String },
+        issues: [{ type: String }] // e.g., "Parked Domain", "SSL Error"
+    },
     isPublished: {
         type: Boolean,
         default: true

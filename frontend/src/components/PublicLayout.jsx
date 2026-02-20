@@ -10,11 +10,11 @@ const PublicLayout = () => {
             <div className="ambient-glow" />
 
             <UserSidebar />
-            <div className="flex-1 min-h-screen relative z-10 transition-all duration-300">
+            <main className="flex-1 min-h-screen relative z-10">
                 <div className="p-8 max-w-7xl mx-auto">
                     <Outlet />
                 </div>
-            </div>
+            </main>
         </div>
     );
 };
